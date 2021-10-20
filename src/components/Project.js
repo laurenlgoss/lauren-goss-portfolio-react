@@ -15,7 +15,7 @@ function Project({
       className={`card project-card${
         borderColor === 'yellowGreen' ? ' royg-border' : ' biv-border'
       }`}
-      style={{ width: 'auto;' }}
+      style={{ width: 'auto' }}
     >
       <div className="project-img-container">
         <img className="card-img-top" src={imgSrc} alt="Card image cap" />
