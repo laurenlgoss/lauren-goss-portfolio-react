@@ -1,4 +1,5 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function Navigation() {
   return (
@@ -11,14 +12,14 @@ function Navigation() {
                 href="https://www.linkedin.com/in/laurenlgoss/"
                 target="_blank"
               >
-                <i className="fab fa-2x fa-linkedin"></i>
+                <FontAwesomeIcon icon={['fab', 'linkedin']} size="2x"/>
               </a>
               <a
                 href="https://github.com/laurenlgoss"
                 target="_blank"
                 className="github-icon"
               >
-                <i className="fab fa-2x fa-github"></i>
+                <FontAwesomeIcon icon={['fab', 'github']} size="2x"/>
               </a>
             </div>
           </div>

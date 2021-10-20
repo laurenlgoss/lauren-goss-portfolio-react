@@ -1,4 +1,5 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function Project({
   borderColor,
@@ -21,11 +22,11 @@ function Project({
         <img className="card-img-top" src={imgSrc} alt="Card image cap" />
         <div className="project-icons-container">
           <a href={githubRepo} target="_blank">
-            <i className="fab fa-3x fa-github"></i>
+          <FontAwesomeIcon icon={['fab', 'github']} size="3x"/>
           </a>
           {deployedApp ? (
             <a href={deployedApp} target="_blank">
-              <i className="fas fa-3x fa-external-link-alt"></i>
+              <FontAwesomeIcon icon={['fas', 'external-link-alt']} size="3x"/>
             </a>
           ) : (
             <></>
@@ -44,7 +45,7 @@ function Project({
             return (
               <li className="alt-font">
                 <span className="fa-li">
-                  <i className="fas fa-check"></i>
+                <FontAwesomeIcon icon={['fas', 'check']} />
                 </span>
                 {language}
               </li>

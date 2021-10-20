@@ -1,4 +1,5 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function Header() {
   return (
@@ -14,8 +15,8 @@ function Header() {
             <div className="col-6 align-self-center intro">
               <h5>
                 <span className="alt-font hello">
-                  <i className="fas fa-quote-left"></i> Hello world{' '}
-                  <i className="fas fa-quote-right"></i>
+                  <FontAwesomeIcon icon={['fas', 'quote-left']} /> Hello world{' '}
+                  <FontAwesomeIcon icon={['fas', 'quote-right']} />
                 </span>{' '}
                 my name is
               </h5>
