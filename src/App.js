@@ -16,7 +16,7 @@ function App() {
       <main>
         <Header />
         <AboutMe />
-        <ProjectsContainer />
+        {/* <ProjectsContainer /> */}
         <Contact />
       </main>
 

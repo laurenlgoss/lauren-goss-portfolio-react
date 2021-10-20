@@ -1,6 +1,21 @@
 import React from 'react';
 import Skills from './Skills';
 
+const frontendSkills = {
+  category: 'frontend',
+  skills: ['JavaScript', 'Node.js', 'jQuery', 'ReactJS', 'HTML/CSS'],
+};
+
+const backendSkills = {
+  category: 'backend',
+  skills: ['Express.js', 'ASP.NET/Visual Basic', 'MySQL/Sequelize', 'NoSQL/MongoDB/Mongoose', 'Handlebars.js'],
+};
+
+const otherSkills = {
+  category: 'other',
+  skills: ['Unit Testing', 'Model View Controller', 'Visual Studio Code', 'Wireframing', 'Bitbucket/Sourcetree'],
+};
+
 function AboutMe() {
   return (
     <div id="about-me">
@@ -23,13 +38,13 @@ function AboutMe() {
       </div>
       <div class="row justify-content-between">
         <div class="col-md-4">
-          <Skills />
+          <Skills category={frontendSkills.category} skills={frontendSkills.skills} />
         </div>
         <div class="col-md-4">
-          <Skills />
+          <Skills category={backendSkills.category} skills={backendSkills.skills} />
         </div>
         <div class="col-md-4">
-          <Skills />
+          <Skills category={otherSkills.category} skills={otherSkills.skills} />
         </div>
       </div>
     </div>
