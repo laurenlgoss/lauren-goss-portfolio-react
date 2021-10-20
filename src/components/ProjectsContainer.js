@@ -7,7 +7,7 @@ const featuredProject = {
   description:
     '// full-stack application that allows the user to keep track of all the jobs they are applying for in one convenient location.',
   githubRepo: 'https://github.com/laurenlgoss/job-application-tracker',
-  imgSrc: '',
+  imgSrc: '/applitrak-dashboard.png',
   languages: [
     'JavaScript',
     'Express.js',
@@ -26,7 +26,7 @@ const skyGazer = {
   description:
     "// dashboard that uses the user's location and chosen satellite to determine the dates/times of that satellite's passovers for the next 7 days and their predicted visiblity.",
   githubRepo: 'https://github.com/laurenlgoss/Sky-Gazer',
-  imgSrc: '',
+  imgSrc: '/sky-gazer.png',
   languages: ['JavaScript', 'API', 'Bulma', 'Local Storage'],
   title: 'Sky Gazer',
 };
@@ -38,7 +38,7 @@ const employeeTracker = {
   description:
     '// backend JavaScript application that allows the user to interact with an employee database through the command line.',
   githubRepo: 'https://github.com/laurenlgoss/employee-tracker',
-  imgSrc: '',
+  imgSrc: '/employee-tracker.gif',
   languages: ['JavaScript', 'Node.js', 'MySQL', 'Inquirer.js'],
   title: 'Employee Tracker',
 };
@@ -50,7 +50,7 @@ const weatherDashboard = {
   description:
     '// weather dashboard that displays the current weather and 5-day forecast for whichever city user inputs.',
   githubRepo: 'https://github.com/laurenlgoss/weather-dashboard',
-  imgSrc: '',
+  imgSrc: '/weather-dashboard.png',
   languages: ['JavaScript', 'API', 'Bootstrap', 'Local Storage'],
   title: 'Weather Dashboard',
 };
@@ -62,7 +62,7 @@ const codeQuiz = {
   description:
     '// multiple choice quiz that tests the user on knowledge of HTML, CSS, and JavaScript concepts.',
   githubRepo: 'https://github.com/laurenlgoss/code-quiz',
-  imgSrc: '',
+  imgSrc: '/code-quiz.png',
   languages: ['JavaScript', 'Local Storage', 'HTML/CSS'],
   title: 'Code Quiz',
 };

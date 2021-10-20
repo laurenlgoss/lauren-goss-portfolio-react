@@ -1,6 +1,6 @@
 import React from 'react';
 
-const contactInfo = '{ email: laurenlgoss98@gmail.com, phone: 828-409-3012, resume: <a href="./assets/images/Lauren Goss Resume.pdf" target="_blank" className="resume-download">downloadHere</a> };';
+const contactInfo = '{ email: laurenlgoss98@gmail.com, phone: 828-409-3012, resume: <a href="/Lauren Goss Resume.pdf" target="_blank" className="resume-download">downloadHere</a> };';
 
 function Contact() {
     return (

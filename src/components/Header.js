@@ -8,7 +8,7 @@ function Header() {
         <div className="col-9 right-header">
           <div className="row">
             <div className="col-3">
-              <img src="assets/images/Headshot.jpg" className="headshot" />
+              <img src="/Headshot.jpg" className="headshot" />
               <div className="headshot-decoration"></div>
             </div>
             <div className="col-6 align-self-center intro">
