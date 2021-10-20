@@ -8,22 +8,36 @@ const frontendSkills = {
 
 const backendSkills = {
   category: 'backend',
-  skills: ['Express.js', 'ASP.NET/Visual Basic', 'MySQL/Sequelize', 'NoSQL/MongoDB/Mongoose', 'Handlebars.js'],
+  skills: [
+    'Express.js',
+    'ASP.NET/Visual Basic',
+    'MySQL/Sequelize',
+    'NoSQL/MongoDB/Mongoose',
+    'Handlebars.js',
+  ],
 };
 
 const otherSkills = {
   category: 'other',
-  skills: ['Unit Testing', 'Model View Controller', 'Visual Studio Code', 'Wireframing', 'Bitbucket/Sourcetree'],
+  skills: [
+    'Unit Testing',
+    'Model View Controller',
+    'Visual Studio Code',
+    'Wireframing',
+    'Bitbucket/Sourcetree',
+  ],
 };
+
+const skillsArray = [frontendSkills, backendSkills, otherSkills];
 
 function AboutMe() {
   return (
     <div id="about-me">
-      <div class="row" style={{ position: 'relative' }}>
-        <h1 class="section-title" id="about-me-title">
+      <div className="row" style={{ position: 'relative' }}>
+        <h1 className="section-title" id="about-me-title">
           about
         </h1>
-        <div class="col-8 offset-2">
+        <div className="col-8 offset-2">
           <p>
             I am presently residing in Hickory, NC. I graduated Summa Cum Laude
             from North Carolina State University in May 2020, obtaining my
@@ -36,16 +50,17 @@ function AboutMe() {
           </p>
         </div>
       </div>
-      <div class="row justify-content-between">
-        <div class="col-md-4">
-          <Skills category={frontendSkills.category} skills={frontendSkills.skills} />
-        </div>
-        <div class="col-md-4">
-          <Skills category={backendSkills.category} skills={backendSkills.skills} />
-        </div>
-        <div class="col-md-4">
-          <Skills category={otherSkills.category} skills={otherSkills.skills} />
-        </div>
+      <div className="row justify-content-between">
+        {skillsArray.map((skillsObject) => {
+          return (
+            <div className="col-md-4">
+              <Skills
+                category={skillsObject.category}
+                skills={skillsObject.skills}
+              />
+            </div>
+          );
+        })}
       </div>
     </div>
   );
