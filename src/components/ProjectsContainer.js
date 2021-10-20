@@ -2,6 +2,23 @@ import React from 'react';
 import FeaturedProject from './FeaturedProject';
 import Project from './Project';
 
+const featuredProject = {
+  deployedApp: 'https://immense-eyrie-11789.herokuapp.com/',
+  description:
+    '// full-stack application that allows the user to keep track of all the jobs they are applying for in one convenient location.',
+  githubRepo: 'https://github.com/laurenlgoss/job-application-tracker',
+  imgSrc: '',
+  languages: [
+    'JavaScript',
+    'Express.js',
+    'MySQL',
+    'Sequelize',
+    'Handlebars.js',
+    'Full Calendar.io',
+  ],
+  title: 'AppliTrak',
+};
+
 const skyGazer = {
   borderColor: 'yellowGreen',
   columnSide: 'left',
@@ -59,7 +76,14 @@ function ProjectsContainer() {
         <h1 className="section-title" id="projects-title">
           projects
         </h1>
-        {/* <FeaturedProject /> */}
+        <FeaturedProject
+          deployedApp={featuredProject.deployedApp}
+          description={featuredProject.description}
+          githubRepo={featuredProject.githubRepo}
+          imgSrc={featuredProject.imgSrc}
+          languages={featuredProject.languages}
+          title={featuredProject.title}
+        />
       </div>
 
       <div className="row justify-content-around projects">
@@ -84,7 +108,7 @@ function ProjectsContainer() {
             })}
         </div>
         <div className="col-md-6">
-        {projectsArray
+          {projectsArray
             .filter((project) => {
               return project.columnSide === 'right';
             })
