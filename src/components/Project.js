@@ -33,12 +33,12 @@ function Project({
           )}
         </div>
       </div>
-      <div className={`${columnSide === 'right' ? 'text-right' : ''}`}>
+      <div className={`${columnSide === 'left' ? 'text-right' : ''}`}>
         <h4 className="project-title">{title}</h4>
         <p className="alt-font">{description}</p>
         <ul
           className={`fa-ul custom-list${
-            columnSide === 'right' ? ' text-right' : ' text-left'
+            columnSide === 'left' ? ' text-right' : ' text-left'
           }`}
         >
           {languages.map((language) => {

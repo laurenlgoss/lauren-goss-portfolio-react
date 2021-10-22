@@ -19,6 +19,8 @@ const featuredProject = {
   title: 'AppliTrak',
 };
 
+// TODO: Add key/value e.g. 'lightIcons: true' to change class of fontawesome icons...
+
 const skyGazer = {
   borderColor: 'yellowGreen',
   columnSide: 'left',
