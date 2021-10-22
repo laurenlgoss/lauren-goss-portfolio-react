@@ -7,6 +7,7 @@ function FeaturedProject({
   githubRepo,
   imgSrc,
   languages,
+  lightIcons,
   title,
 }) {
   return (
@@ -34,10 +35,10 @@ function FeaturedProject({
         >
           <img className="img-fluid" src={imgSrc} />
           <div className="project-icons-container">
-            <a href={githubRepo} target="_blank">
+            <a href={githubRepo} target="_blank" className={`${lightIcons ? 'light' : ''}`}>
             <FontAwesomeIcon icon={['fab', 'github']} size="3x"/>
             </a>
-            <a href={deployedApp} target="_blank">
+            <a href={deployedApp} target="_blank" className={`${lightIcons ? 'light' : ''}`}>
             <FontAwesomeIcon icon={['fas', 'external-link-alt']} size="3x"/>
             </a>
           </div>

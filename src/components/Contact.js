@@ -3,7 +3,7 @@ import React from 'react';
 function Contact() {
   return (
     <div id="contact">
-      <div className="row" style={{ height: '0' }}>
+      <div className="row" style={{ height: '0', position: 'relative' }}>
         <div className="col text-right">
           <h1 className="section-title" id="contact-title">
             contact

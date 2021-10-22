@@ -7,6 +7,14 @@
   --alt-font-color: #1d1d1d;
 }
 
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
 body {
   background-color: black;
   font-family: sans-serif;
@@ -183,7 +191,7 @@ body {
   left: 21px;
 }
 
-.custom-list i {
+.custom-list span {
   color: var(--right-header);
 }
 
@@ -296,6 +304,7 @@ body {
 
 .resume-download {
   color: var(--right-header);
+  text-decoration: none;
 }
 
 .resume-download:hover {

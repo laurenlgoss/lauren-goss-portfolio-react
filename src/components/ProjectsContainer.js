@@ -16,6 +16,7 @@ const featuredProject = {
     'Handlebars.js',
     'Full Calendar.io',
   ],
+  lightIcons: false,
   title: 'AppliTrak',
 };
 
@@ -86,6 +87,7 @@ function ProjectsContainer() {
           githubRepo={featuredProject.githubRepo}
           imgSrc={featuredProject.imgSrc}
           languages={featuredProject.languages}
+          lightIcons={featuredProject.lightIcons}
           title={featuredProject.title}
         />
       </div>
