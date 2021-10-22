@@ -9,6 +9,7 @@ function Project({
   githubRepo,
   imgSrc,
   languages,
+  lightIcons,
   title,
 }) {
   return (
@@ -21,11 +22,11 @@ function Project({
       <div className="project-img-container">
         <img className="card-img-top" src={imgSrc} alt="Card image cap" />
         <div className="project-icons-container">
-          <a href={githubRepo} target="_blank">
+          <a href={githubRepo} target="_blank" className={`${lightIcons ? 'light' : ''}`}>
           <FontAwesomeIcon icon={['fab', 'github']} size="3x"/>
           </a>
           {deployedApp ? (
-            <a href={deployedApp} target="_blank">
+            <a href={deployedApp} target="_blank" className={`${lightIcons ? 'light' : ''}`}>
               <FontAwesomeIcon icon={['fas', 'external-link-alt']} size="3x"/>
             </a>
           ) : (

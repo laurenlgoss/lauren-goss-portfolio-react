@@ -19,8 +19,6 @@ const featuredProject = {
   title: 'AppliTrak',
 };
 
-// TODO: Add key/value e.g. 'lightIcons: true' to change class of fontawesome icons...
-
 const skyGazer = {
   borderColor: 'yellowGreen',
   columnSide: 'left',
@@ -30,6 +28,7 @@ const skyGazer = {
   githubRepo: 'https://github.com/laurenlgoss/Sky-Gazer',
   imgSrc: '/sky-gazer.png',
   languages: ['JavaScript', 'API', 'Bulma', 'Local Storage'],
+  lightIcons: false,
   title: 'Sky Gazer',
 };
 
@@ -42,6 +41,7 @@ const employeeTracker = {
   githubRepo: 'https://github.com/laurenlgoss/employee-tracker',
   imgSrc: '/employee-tracker.gif',
   languages: ['JavaScript', 'Node.js', 'MySQL', 'Inquirer.js'],
+  lightIcons: true,
   title: 'Employee Tracker',
 };
 
@@ -54,6 +54,7 @@ const weatherDashboard = {
   githubRepo: 'https://github.com/laurenlgoss/weather-dashboard',
   imgSrc: '/weather-dashboard.png',
   languages: ['JavaScript', 'API', 'Bootstrap', 'Local Storage'],
+  lightIcons: false,
   title: 'Weather Dashboard',
 };
 
@@ -66,6 +67,7 @@ const codeQuiz = {
   githubRepo: 'https://github.com/laurenlgoss/code-quiz',
   imgSrc: '/code-quiz.png',
   languages: ['JavaScript', 'Local Storage', 'HTML/CSS'],
+  lightIcons: false,
   title: 'Code Quiz',
 };
 
@@ -104,6 +106,7 @@ function ProjectsContainer() {
                   githubRepo={project.githubRepo}
                   imgSrc={project.imgSrc}
                   languages={project.languages}
+                  lightIcons={project.lightIcons}
                   title={project.title}
                 />
               );
