@@ -1,6 +1,8 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+import headshotImg from '../images/Headshot.jpg';
+
 function Header() {
   return (
     <div className="header-container">
@@ -9,7 +11,7 @@ function Header() {
         <div className="col-9 right-header">
           <div className="row">
             <div className="col-3">
-              <img src="/Headshot.jpg" className="headshot" />
+              <img src={headshotImg} className="headshot" />
               <div className="headshot-decoration"></div>
             </div>
             <div className="col-6 align-self-center intro">

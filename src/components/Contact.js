@@ -1,5 +1,7 @@
 import React from 'react';
 
+import resume from '../images/Lauren Goss Resume.pdf';
+
 function Contact() {
   return (
     <div id="contact">
@@ -12,7 +14,7 @@ function Contact() {
       </div>
       <div className="row">
         <div className="col text-center">
-          <h5 className="alt-font">{`contactInfo = { email: laurenlgoss98@gmail.com, phone: 828-409-3012, resume: `}<a href="/Lauren Goss Resume.pdf" target="_blank" className="resume-download">downloadHere</a>{` }`}</h5>
+          <h5 className="alt-font">{`contactInfo = { email: laurenlgoss98@gmail.com, phone: 828-409-3012, resume: `}<a href={resume} target="_blank" className="resume-download">downloadHere</a>{` }`}</h5>
         </div>
       </div>
     </div>

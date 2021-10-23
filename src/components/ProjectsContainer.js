@@ -2,12 +2,18 @@ import React from 'react';
 import FeaturedProject from './FeaturedProject';
 import Project from './Project';
 
+import applitrakImg from '../images/applitrak-dashboard.png';
+import skyGazerImg from '../images/sky-gazer.png';
+import employeeTrackerImg from '../images/employee-tracker.gif';
+import weatherDashboardImg from '../images/weather-dashboard.png';
+import codeQuizImg from '../images/code-quiz.png';
+
 const featuredProject = {
   deployedApp: 'https://immense-eyrie-11789.herokuapp.com/',
   description:
     '// full-stack application that allows the user to keep track of all the jobs they are applying for in one convenient location.',
   githubRepo: 'https://github.com/laurenlgoss/job-application-tracker',
-  imgSrc: '/applitrak-dashboard.png',
+  imgSrc: applitrakImg,
   languages: [
     'JavaScript',
     'Express.js',
@@ -27,7 +33,7 @@ const skyGazer = {
   description:
     "// dashboard that uses the user's location and chosen satellite to determine the dates/times of that satellite's passovers for the next 7 days and their predicted visiblity.",
   githubRepo: 'https://github.com/laurenlgoss/Sky-Gazer',
-  imgSrc: '/sky-gazer.png',
+  imgSrc: skyGazerImg,
   languages: ['JavaScript', 'API', 'Bulma', 'Local Storage'],
   lightIcons: false,
   title: 'Sky Gazer',
@@ -40,7 +46,7 @@ const employeeTracker = {
   description:
     '// backend JavaScript application that allows the user to interact with an employee database through the command line.',
   githubRepo: 'https://github.com/laurenlgoss/employee-tracker',
-  imgSrc: '/employee-tracker.gif',
+  imgSrc: employeeTrackerImg,
   languages: ['JavaScript', 'Node.js', 'MySQL', 'Inquirer.js'],
   lightIcons: true,
   title: 'Employee Tracker',
@@ -53,7 +59,7 @@ const weatherDashboard = {
   description:
     '// weather dashboard that displays the current weather and 5-day forecast for whichever city user inputs.',
   githubRepo: 'https://github.com/laurenlgoss/weather-dashboard',
-  imgSrc: '/weather-dashboard.png',
+  imgSrc: weatherDashboardImg,
   languages: ['JavaScript', 'API', 'Bootstrap', 'Local Storage'],
   lightIcons: false,
   title: 'Weather Dashboard',
@@ -66,7 +72,7 @@ const codeQuiz = {
   description:
     '// multiple choice quiz that tests the user on knowledge of HTML, CSS, and JavaScript concepts.',
   githubRepo: 'https://github.com/laurenlgoss/code-quiz',
-  imgSrc: '/code-quiz.png',
+  imgSrc: codeQuizImg,
   languages: ['JavaScript', 'Local Storage', 'HTML/CSS'],
   lightIcons: false,
   title: 'Code Quiz',
