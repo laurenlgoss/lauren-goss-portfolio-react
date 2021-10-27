@@ -1,6 +1,6 @@
 # lauren-goss-portfolio-react
 
-Portfolio to share some information about myself, showcase my deployed applications, and share my contact information.
+Portfolio created with React to share some information about myself, showcase my deployed applications, and share my contact information.
 
 ## About Me
 
