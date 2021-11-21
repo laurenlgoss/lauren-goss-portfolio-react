@@ -11,7 +11,7 @@ function Header() {
         <div className="col-9 right-header">
           <div className="row">
             <div className="col-3">
-              <img src={headshotImg} className="headshot" />
+              <img src={headshotImg} className="headshot" alt="Lauren Goss Headshot" />
               <div className="headshot-decoration"></div>
             </div>
             <div className="col-6 align-self-center intro">
