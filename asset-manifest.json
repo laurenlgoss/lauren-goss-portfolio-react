@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/lauren-goss-portfolio-react/static/css/main.261e0efb.chunk.css",
-    "main.js": "/lauren-goss-portfolio-react/static/js/main.ec9be683.chunk.js",
-    "main.js.map": "/lauren-goss-portfolio-react/static/js/main.ec9be683.chunk.js.map",
+    "main.js": "/lauren-goss-portfolio-react/static/js/main.d92a9035.chunk.js",
+    "main.js.map": "/lauren-goss-portfolio-react/static/js/main.d92a9035.chunk.js.map",
     "runtime-main.js": "/lauren-goss-portfolio-react/static/js/runtime-main.7aff6a07.js",
     "runtime-main.js.map": "/lauren-goss-portfolio-react/static/js/runtime-main.7aff6a07.js.map",
     "static/css/2.0a9ec390.chunk.css": "/lauren-goss-portfolio-react/static/css/2.0a9ec390.chunk.css",
@@ -25,6 +25,6 @@
     "static/css/2.0a9ec390.chunk.css",
     "static/js/2.b9c930de.chunk.js",
     "static/css/main.261e0efb.chunk.css",
-    "static/js/main.ec9be683.chunk.js"
+    "static/js/main.d92a9035.chunk.js"
   ]
 }
