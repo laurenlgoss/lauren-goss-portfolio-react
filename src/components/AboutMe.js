@@ -5,11 +5,11 @@ const frontendSkills = {
   category: 'frontend',
   skills: [
     'JavaScript',
-    'Node.js',
-    'jQuery',
     'ReactJS',
+    'Node.js',
+    'Bootstrap/Material UI',
+    'jQuery',
     'HTML/CSS',
-    'Apollo Client',
   ],
 };
 
@@ -17,23 +17,23 @@ const backendSkills = {
   category: 'backend',
   skills: [
     'Express.js',
-    'ASP.NET/Visual Basic',
     'MySQL/Sequelize',
     'NoSQL/MongoDB/Mongoose',
+    '.NET/Visual Basic',
     'Handlebars.js',
-    'GraphQL',
+    'GraphQL/Apollo Client',
   ],
 };
 
 const otherSkills = {
   category: 'other',
   skills: [
+    'Git Source Control',
+    'Visual Studio Code',
     'Unit Testing',
     'Model View Controller',
-    'Visual Studio Code',
     'Wireframing/Figma',
     'Bitbucket/Sourcetree',
-    'Git Source Control',
   ],
 };
 

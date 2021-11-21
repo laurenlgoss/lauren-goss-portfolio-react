@@ -16,7 +16,6 @@ const featuredProject = {
   githubRepo: 'https://github.com/laurenlgoss/Public-Art-Finder',
   imgSrc: artinAroundImg,
   languages: [
-    'MERN Stack',
     'JavaScript',
     'ReactJS',
     'Node.js',
@@ -24,6 +23,7 @@ const featuredProject = {
     'MongoDB',
     'Mongoose',
     'Cloudinary',
+    'Material UI'
   ],
   lightIcons: false,
   title: 'Artin\' Around',
