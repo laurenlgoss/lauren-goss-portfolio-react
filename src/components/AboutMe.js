@@ -3,7 +3,14 @@ import Skills from './Skills';
 
 const frontendSkills = {
   category: 'frontend',
-  skills: ['JavaScript', 'Node.js', 'jQuery', 'ReactJS', 'HTML/CSS'],
+  skills: [
+    'JavaScript',
+    'Node.js',
+    'jQuery',
+    'ReactJS',
+    'HTML/CSS',
+    'Apollo Client',
+  ],
 };
 
 const backendSkills = {
@@ -14,6 +21,7 @@ const backendSkills = {
     'MySQL/Sequelize',
     'NoSQL/MongoDB/Mongoose',
     'Handlebars.js',
+    'GraphQL',
   ],
 };
 
@@ -23,8 +31,9 @@ const otherSkills = {
     'Unit Testing',
     'Model View Controller',
     'Visual Studio Code',
-    'Wireframing',
+    'Wireframing/Figma',
     'Bitbucket/Sourcetree',
+    'Git Source Control',
   ],
 };
 
@@ -45,7 +54,7 @@ function AboutMe() {
             veterinary field following graduation, I was ready for a career
             change and began teaching myself Swift in Summer of 2020. Shortly
             after, I discovered a passion for logic and enrolled in UNC's Coding
-            Boot Camp, from which I will graduate in November 2021. I have a
+            Boot Camp, from which I recently graduated. I have a
             particular enthusiasm for writing frontend and backend logic.
           </p>
         </div>

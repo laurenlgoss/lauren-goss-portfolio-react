@@ -2,28 +2,31 @@ import React from 'react';
 import FeaturedProject from './FeaturedProject';
 import Project from './Project';
 
-import applitrakImg from '../images/applitrak-dashboard.png';
+import artinAroundImg from '../images/artin-around.png';
+import appliTrakImg from '../images/applitrak-dashboard.png';
 import skyGazerImg from '../images/sky-gazer.png';
 import employeeTrackerImg from '../images/employee-tracker.gif';
 import weatherDashboardImg from '../images/weather-dashboard.png';
 import codeQuizImg from '../images/code-quiz.png';
 
 const featuredProject = {
-  deployedApp: 'https://immense-eyrie-11789.herokuapp.com/',
+  deployedApp: 'https://artin-around.herokuapp.com/',
   description:
-    '// full-stack application that allows the user to keep track of all the jobs they are applying for in one convenient location.',
-  githubRepo: 'https://github.com/laurenlgoss/job-application-tracker',
-  imgSrc: applitrakImg,
+    '// collaborative project utilizing the MERN stack. allows the user to explore street art by location and add their own images to their public portfolio.',
+  githubRepo: 'https://github.com/laurenlgoss/Public-Art-Finder',
+  imgSrc: artinAroundImg,
   languages: [
+    'MERN Stack',
     'JavaScript',
+    'ReactJS',
+    'Node.js',
     'Express.js',
-    'MySQL',
-    'Sequelize',
-    'Handlebars.js',
-    'Full Calendar.io',
+    'MongoDB',
+    'Mongoose',
+    'Cloudinary',
   ],
   lightIcons: false,
-  title: 'AppliTrak',
+  title: 'Artin\' Around',
 };
 
 const skyGazer = {
@@ -39,25 +42,25 @@ const skyGazer = {
   title: 'Sky Gazer',
 };
 
-const employeeTracker = {
-  borderColor: 'bluePink',
-  columnSide: 'left',
-  deployedApp: '',
-  description:
-    '// backend JavaScript application that allows the user to interact with an employee database through the command line.',
-  githubRepo: 'https://github.com/laurenlgoss/employee-tracker',
-  imgSrc: employeeTrackerImg,
-  languages: ['JavaScript', 'Node.js', 'MySQL', 'Inquirer.js'],
-  lightIcons: true,
-  title: 'Employee Tracker',
-};
+// const employeeTracker = {
+//   borderColor: 'bluePink',
+//   columnSide: 'left',
+//   deployedApp: '',
+//   description:
+//     '// backend JavaScript application that allows the user to interact with an employee database through the command line.',
+//   githubRepo: 'https://github.com/laurenlgoss/employee-tracker',
+//   imgSrc: employeeTrackerImg,
+//   languages: ['JavaScript', 'Node.js', 'MySQL', 'Inquirer.js'],
+//   lightIcons: true,
+//   title: 'Employee Tracker',
+// };
 
 const weatherDashboard = {
-  borderColor: 'bluePink',
+  borderColor: 'yellowGreen',
   columnSide: 'right',
   deployedApp: 'https://laurenlgoss.github.io/weather-dashboard/',
   description:
-    '// weather dashboard that displays the current weather and 5-day forecast for whichever city user inputs.',
+    '// weather dashboard that displays the current weather and 5-day forecast for whichever city the user inputs.',
   githubRepo: 'https://github.com/laurenlgoss/weather-dashboard',
   imgSrc: weatherDashboardImg,
   languages: ['JavaScript', 'API', 'Bootstrap', 'Local Storage'],
@@ -66,8 +69,8 @@ const weatherDashboard = {
 };
 
 const codeQuiz = {
-  borderColor: 'yellowGreen',
-  columnSide: 'right',
+  borderColor: 'bluePink',
+  columnSide: 'left',
   deployedApp: 'https://laurenlgoss.github.io/code-quiz/',
   description:
     '// multiple choice quiz that tests the user on knowledge of HTML, CSS, and JavaScript concepts.',
@@ -78,7 +81,27 @@ const codeQuiz = {
   title: 'Code Quiz',
 };
 
-const projectsArray = [skyGazer, employeeTracker, weatherDashboard, codeQuiz];
+const appliTrak = {
+  borderColor: 'bluePink',
+  columnSide: 'right',
+  deployedApp: 'https://immense-eyrie-11789.herokuapp.com/',
+  description:
+    '// full-stack application that allows the user to keep track of all the jobs they are applying for in one convenient location.',
+  githubRepo: 'https://github.com/laurenlgoss/job-application-tracker',
+  imgSrc: appliTrakImg,
+  languages: [
+    'JavaScript',
+    'Express.js',
+    'MySQL',
+    'Sequelize',
+    'Handlebars.js',
+    'Full Calendar.io',
+  ],
+  lightIcons: false,
+  title: 'AppliTrak',
+}
+
+const projectsArray = [skyGazer, appliTrak, weatherDashboard, codeQuiz];
 
 function ProjectsContainer() {
   return (
