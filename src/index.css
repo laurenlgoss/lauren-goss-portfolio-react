@@ -131,6 +131,10 @@ body {
   z-index: -1;
 }
 
+.carousel {
+  margin-bottom: var(--vertical-margin);
+}
+
 /* About Me */
 
 #about-me-title {
