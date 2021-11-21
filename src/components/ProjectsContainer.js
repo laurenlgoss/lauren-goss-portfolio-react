@@ -5,7 +5,7 @@ import Project from './Project';
 import artinAroundImg from '../images/artin-around.png';
 import appliTrakImg from '../images/applitrak-dashboard.png';
 import skyGazerImg from '../images/sky-gazer.png';
-import employeeTrackerImg from '../images/employee-tracker.gif';
+// import employeeTrackerImg from '../images/employee-tracker.gif';
 import weatherDashboardImg from '../images/weather-dashboard.png';
 import codeQuizImg from '../images/code-quiz.png';
 
