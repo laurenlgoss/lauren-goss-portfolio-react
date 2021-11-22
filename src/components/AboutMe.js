@@ -23,6 +23,9 @@ import figmaImg from '../images/skills-logos/figma.png';
 import bitbucketImg from '../images/skills-logos/bitbucket.png';
 import sourcetreeImg from '../images/skills-logos/sourcetree.png';
 import githubImg from '../images/skills-logos/github.png';
+import robo3TImg from '../images/skills-logos/robo3t.png';
+import insomniaImg from '../images/skills-logos/insomnia.png';
+import materialUIImg from '../images/skills-logos/material-ui.png';
 
 const frontendSkills = {
   category: 'frontend',
@@ -98,7 +101,7 @@ const bootstrap = {
 };
 
 const materialUI = {
-  img: '',
+  img: materialUIImg,
   name: 'Material UI',
 };
 
@@ -178,12 +181,12 @@ const sourcetree = {
 };
 
 const robo3T = {
-  img: '',
+  img: robo3TImg,
   name: 'Robo 3T',
 };
 
 const insomnia = {
-  img: '',
+  img: insomniaImg,
   name: 'Insomnia',
 };
 
@@ -204,17 +207,17 @@ const carouselSkillsArray = [
   graphql,
   handlebars,
   html,
-  // insomnia,
+  insomnia,
   javaScript,
   jest,
   jQuery,
-  // materialUI,
+  materialUI,
   mongodb,
   mySQL,
   net,
   node,
   react,
-  // robo3T,
+  robo3T,
   sequelize,
   sourcetree,
   // visualBasic,
