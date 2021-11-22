@@ -26,6 +26,12 @@ import githubImg from '../images/skills-logos/github.png';
 import robo3TImg from '../images/skills-logos/robo3t.png';
 import insomniaImg from '../images/skills-logos/insomnia.png';
 import materialUIImg from '../images/skills-logos/material-ui.png';
+import microsoftVisualStudioImg from '../images/skills-logos/visual-studio.png';
+import herokuImg from '../images/skills-logos/heroku.png';
+import mongooseImg from '../images/skills-logos/mongoose.png';
+import apolloImg from '../images/skills-logos/apollo.png';
+import restfulAPIImg from '../images/skills-logos/restful-api.png';
+import npmImg from '../images/skills-logos/npm.png';
 
 const frontendSkills = {
   category: 'frontend',
@@ -127,7 +133,7 @@ const mongodb = {
 
 const net = {
   img: netImg,
-  name: '.NET',
+  name: '.NET Framework',
 };
 
 const visualBasic = {
@@ -146,7 +152,7 @@ const graphql = {
 };
 
 const apollo = {
-  img: '',
+  img: apolloImg,
   name: 'Apollo',
 };
 
@@ -158,6 +164,11 @@ const git = {
 const visualStudioCode = {
   img: visualStudioCodeImg,
   name: 'Visual Studio Code',
+};
+
+const microsoftVisualStudio = {
+  img: microsoftVisualStudioImg,
+  name: 'Microsoft Visual Studio',
 };
 
 const jest = {
@@ -195,8 +206,28 @@ const github = {
   name: 'GitHub',
 };
 
+const heroku = {
+  img: herokuImg,
+  name: 'Heroku',
+};
+
+const mongoose = {
+  img: mongooseImg,
+  name: 'Mongoose',
+};
+
+const restfulAPI = {
+  img: restfulAPIImg,
+  name: 'RESTful API',
+};
+
+const npm = {
+  img: npmImg,
+  name: 'Node Package Manager',
+};
+
 const carouselSkillsArray = [
-  // apollo,
+  apollo,
   bitbucket,
   bootstrap,
   css,
@@ -206,17 +237,22 @@ const carouselSkillsArray = [
   github,
   graphql,
   handlebars,
+  heroku,
   html,
   insomnia,
   javaScript,
   jest,
   jQuery,
   materialUI,
+  microsoftVisualStudio,
   mongodb,
+  mongoose,
   mySQL,
   net,
   node,
+  npm,
   react,
+  restfulAPI,
   robo3T,
   sequelize,
   sourcetree,
