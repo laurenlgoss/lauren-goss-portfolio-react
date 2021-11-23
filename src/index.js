@@ -1,7 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css'
-
-import './fontawesome';
+import './utils/fontawesome';
 
 import React from 'react';
 import ReactDOM from 'react-dom';

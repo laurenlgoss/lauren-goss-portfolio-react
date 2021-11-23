@@ -2,12 +2,12 @@ import React from 'react';
 import FeaturedProject from './FeaturedProject';
 import Project from './Project';
 
-import artinAroundImg from '../images/artin-around.png';
-import appliTrakImg from '../images/applitrak-dashboard.png';
-import skyGazerImg from '../images/sky-gazer.png';
-import employeeTrackerImg from '../images/employee-tracker.gif';
-import weatherDashboardImg from '../images/weather-dashboard.png';
-// import codeQuizImg from '../images/code-quiz.png';
+import artinAroundImg from '../images/projects/artin-around.png';
+import appliTrakImg from '../images/projects/applitrak-dashboard.png';
+import skyGazerImg from '../images/projects/sky-gazer.png';
+import employeeTrackerImg from '../images/projects/employee-tracker.gif';
+import weatherDashboardImg from '../images/projects/weather-dashboard.png';
+// import codeQuizImg from '../images/projects/code-quiz.png';
 
 const featuredProject = {
   deployedApp: 'https://artin-around.herokuapp.com/',
