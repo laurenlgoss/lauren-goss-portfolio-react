@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/lauren-goss-portfolio-react/static/css/main.a409dbda.chunk.css",
-    "main.js": "/lauren-goss-portfolio-react/static/js/main.887ab087.chunk.js",
-    "main.js.map": "/lauren-goss-portfolio-react/static/js/main.887ab087.chunk.js.map",
+    "main.css": "/lauren-goss-portfolio-react/static/css/main.61f08637.chunk.css",
+    "main.js": "/lauren-goss-portfolio-react/static/js/main.c69b7fea.chunk.js",
+    "main.js.map": "/lauren-goss-portfolio-react/static/js/main.c69b7fea.chunk.js.map",
     "runtime-main.js": "/lauren-goss-portfolio-react/static/js/runtime-main.7aff6a07.js",
     "runtime-main.js.map": "/lauren-goss-portfolio-react/static/js/runtime-main.7aff6a07.js.map",
     "static/css/2.0a9ec390.chunk.css": "/lauren-goss-portfolio-react/static/css/2.0a9ec390.chunk.css",
-    "static/js/2.038acc78.chunk.js": "/lauren-goss-portfolio-react/static/js/2.038acc78.chunk.js",
-    "static/js/2.038acc78.chunk.js.map": "/lauren-goss-portfolio-react/static/js/2.038acc78.chunk.js.map",
+    "static/js/2.667e087a.chunk.js": "/lauren-goss-portfolio-react/static/js/2.667e087a.chunk.js",
+    "static/js/2.667e087a.chunk.js.map": "/lauren-goss-portfolio-react/static/js/2.667e087a.chunk.js.map",
     "index.html": "/lauren-goss-portfolio-react/index.html",
     "static/css/2.0a9ec390.chunk.css.map": "/lauren-goss-portfolio-react/static/css/2.0a9ec390.chunk.css.map",
-    "static/css/main.a409dbda.chunk.css.map": "/lauren-goss-portfolio-react/static/css/main.a409dbda.chunk.css.map",
-    "static/js/2.038acc78.chunk.js.LICENSE.txt": "/lauren-goss-portfolio-react/static/js/2.038acc78.chunk.js.LICENSE.txt",
+    "static/css/main.61f08637.chunk.css.map": "/lauren-goss-portfolio-react/static/css/main.61f08637.chunk.css.map",
+    "static/js/2.667e087a.chunk.js.LICENSE.txt": "/lauren-goss-portfolio-react/static/js/2.667e087a.chunk.js.LICENSE.txt",
     "static/media/Headshot.accb493b.jpg": "/lauren-goss-portfolio-react/static/media/Headshot.accb493b.jpg",
     "static/media/Lauren Goss Resume.64d0f924.pdf": "/lauren-goss-portfolio-react/static/media/Lauren Goss Resume.64d0f924.pdf",
     "static/media/applitrak-dashboard.20269918.png": "/lauren-goss-portfolio-react/static/media/applitrak-dashboard.20269918.png",
     "static/media/artin-around.3485bd8c.png": "/lauren-goss-portfolio-react/static/media/artin-around.3485bd8c.png",
     "static/media/bootstrap.07d97f57.png": "/lauren-goss-portfolio-react/static/media/bootstrap.07d97f57.png",
-    "static/media/code-quiz.0a0db2ee.png": "/lauren-goss-portfolio-react/static/media/code-quiz.0a0db2ee.png",
+    "static/media/employee-tracker.4e10caac.gif": "/lauren-goss-portfolio-react/static/media/employee-tracker.4e10caac.gif",
     "static/media/robo3t.40820acb.png": "/lauren-goss-portfolio-react/static/media/robo3t.40820acb.png",
     "static/media/sky-gazer.354d6ff4.png": "/lauren-goss-portfolio-react/static/media/sky-gazer.354d6ff4.png",
     "static/media/weather-dashboard.accb4c6e.png": "/lauren-goss-portfolio-react/static/media/weather-dashboard.accb4c6e.png"
@@ -25,8 +25,8 @@
   "entrypoints": [
     "static/js/runtime-main.7aff6a07.js",
     "static/css/2.0a9ec390.chunk.css",
-    "static/js/2.038acc78.chunk.js",
-    "static/css/main.a409dbda.chunk.css",
-    "static/js/main.887ab087.chunk.js"
+    "static/js/2.667e087a.chunk.js",
+    "static/css/main.61f08637.chunk.css",
+    "static/js/main.c69b7fea.chunk.js"
   ]
 }
