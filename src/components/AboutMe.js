@@ -33,6 +33,8 @@ import apolloImg from '../images/skills-logos/apollo.png';
 import restfulAPIImg from '../images/skills-logos/restful-api.png';
 import npmImg from '../images/skills-logos/npm.png';
 
+// --- Skills Cards ---
+
 const frontendSkills = {
   category: 'frontend',
   skills: [
@@ -70,6 +72,8 @@ const otherSkills = {
 };
 
 const skillsArray = [frontendSkills, backendSkills, otherSkills];
+
+// --- Skills Carousel ---
 
 const javaScript = {
   img: javaScriptImg,
@@ -224,6 +228,21 @@ const restfulAPI = {
 const npm = {
   img: npmImg,
   name: 'Node Package Manager',
+};
+
+const macOS = {
+  img: '',
+  name: 'Mac OS',
+};
+
+const windowsOS = {
+  img: '',
+  name: 'Windows OS',
+};
+
+const microsoftSQLManagementServerStudio = {
+  img: '',
+  name: 'Microsoft SQL Server Management Studio',
 };
 
 const carouselSkillsArray = [

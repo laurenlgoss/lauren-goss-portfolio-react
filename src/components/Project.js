@@ -1,5 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import getBadgeColor from '../utils/badgeColor';
 
 function Project({
   borderColor,
@@ -22,12 +23,20 @@ function Project({
       <div className="project-img-container">
         <img className="card-img-top" src={imgSrc} alt="Card image cap" />
         <div className="project-icons-container">
-          <a href={githubRepo} target="_blank" className={`${lightIcons ? 'light' : ''}`}>
-          <FontAwesomeIcon icon={['fab', 'github']} size="3x"/>
+          <a
+            href={githubRepo}
+            target="_blank"
+            className={`${lightIcons ? 'light' : ''}`}
+          >
+            <FontAwesomeIcon icon={['fab', 'github']} size="3x" />
           </a>
           {deployedApp ? (
-            <a href={deployedApp} target="_blank" className={`${lightIcons ? 'light' : ''}`}>
-              <FontAwesomeIcon icon={['fas', 'external-link-alt']} size="3x"/>
+            <a
+              href={deployedApp}
+              target="_blank"
+              className={`${lightIcons ? 'light' : ''}`}
+            >
+              <FontAwesomeIcon icon={['fas', 'external-link-alt']} size="3x" />
             </a>
           ) : (
             <></>
@@ -37,22 +46,17 @@ function Project({
       <div className={`${columnSide === 'left' ? 'text-right' : ''}`}>
         <h4 className="project-title">{title}</h4>
         <p className="alt-font">{description}</p>
-        <ul
-          className={`fa-ul custom-list${
-            columnSide === 'left' ? ' text-right' : ' text-left'
-          }`}
+        <div
+          className={`${columnSide === 'left' ? ' text-right' : ' text-left'}`}
         >
           {languages.map((language) => {
+            const badgeColor = getBadgeColor(language);
+
             return (
-              <li className="alt-font">
-                <span className="fa-li">
-                <FontAwesomeIcon icon={['fas', 'check']} />
-                </span>
-                {language}
-              </li>
+              <span class={`badge badge-pill ${badgeColor}`}>{language}</span>
             );
           })}
-        </ul>
+        </div>
       </div>
     </div>
   );
