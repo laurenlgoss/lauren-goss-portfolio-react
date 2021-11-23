@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import getBadgeColor from '../utils/badgeColor';
 
 function Project({
-  borderColor,
+  // borderColor,
   columnSide,
   deployedApp,
   description,
@@ -15,9 +15,7 @@ function Project({
 }) {
   return (
     <div
-      className={`card project-card${
-        borderColor === 'yellowGreen' ? ' royg-border' : ' biv-border'
-      }`}
+      className='card project-card project-border'
       style={{ width: 'auto' }}
     >
       <div className="project-img-container">

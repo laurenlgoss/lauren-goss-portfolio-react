@@ -35,7 +35,7 @@ const featuredProject = {
 };
 
 const skyGazer = {
-  borderColor: 'yellowGreen',
+  // borderColor: 'yellowGreen',
   columnSide: 'left',
   deployedApp: 'https://pamtheham.github.io/Sky-Gazer/',
   description:
@@ -48,7 +48,7 @@ const skyGazer = {
 };
 
 const employeeTracker = {
-  borderColor: 'bluePink',
+  // borderColor: 'bluePink',
   columnSide: 'left',
   deployedApp: '',
   description:
@@ -61,7 +61,7 @@ const employeeTracker = {
 };
 
 const weatherDashboard = {
-  borderColor: 'yellowGreen',
+  // borderColor: 'yellowGreen',
   columnSide: 'right',
   deployedApp: 'https://laurenlgoss.github.io/weather-dashboard/',
   description:
@@ -87,7 +87,7 @@ const weatherDashboard = {
 // };
 
 const appliTrak = {
-  borderColor: 'bluePink',
+  // borderColor: 'bluePink',
   columnSide: 'right',
   deployedApp: 'https://immense-eyrie-11789.herokuapp.com/',
   description:

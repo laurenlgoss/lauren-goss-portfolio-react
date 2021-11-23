@@ -286,8 +286,7 @@ body {
 }
 
 .local-storage {
-  background-color: hotpink;
-  color: black;
+  background-color: rgb(140, 179, 162);
 }
 
 .default-pill {
@@ -311,7 +310,13 @@ body {
   margin: 0em 1.5em;
 }
 
-.royg-border {
+.project-border {
+  border-radius: 0px;
+  border: 5px solid lightgray;
+  padding: 3em;
+}
+
+/* .royg-border {
   border-image-source: linear-gradient(to left, lime, var(--left-header));
   border-radius: 0px;
   border-image-slice: 1;
@@ -325,7 +330,7 @@ body {
   border-image-slice: 1;
   border-width: 5px;
   padding: 3em;
-}
+} */
 
 #projects .card-img-top {
   border-radius: 0px;
@@ -346,7 +351,8 @@ body {
   box-sizing: content-box;
   border-width: 5px;
   border-style: solid;
-  border-image: linear-gradient(to right, #f13232, #a053df);
+  /* border-image: linear-gradient(to right, #f13232, #a053df); */
+  border-color: lightgray;
   border-image-slice: 1;
   padding: 1.5em;
   margin: 0em 1.5em var(--vertical-margin) 1.5em;
