@@ -31,12 +31,13 @@ function FeaturedProject({
           className="feat-proj-img-container"
           style={{ position: 'relative' }}
         >
-          <img className="img-fluid" src={imgSrc} />
+          <img className="img-fluid" src={imgSrc} alt={`${title} dashboard`} />
           <div className="project-icons-container">
             <a
               href={githubRepo}
               target="_blank"
               className={`${lightIcons ? 'light' : ''}`}
+              rel="noreferrer"
             >
               <FontAwesomeIcon icon={['fab', 'github']} size="3x" />
             </a>
@@ -44,6 +45,7 @@ function FeaturedProject({
               href={deployedApp}
               target="_blank"
               className={`${lightIcons ? 'light' : ''}`}
+              rel="noreferrer"
             >
               <FontAwesomeIcon icon={['fas', 'external-link-alt']} size="3x" />
             </a>

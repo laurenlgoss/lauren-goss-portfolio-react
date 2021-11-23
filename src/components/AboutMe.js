@@ -140,10 +140,10 @@ const net = {
   name: '.NET Framework',
 };
 
-const visualBasic = {
-  img: '',
-  name: 'Visual Basic'
-}
+// const visualBasic = {
+//   img: '',
+//   name: 'Visual Basic'
+// }
 
 const handlebars = {
   img: handlebarsImg,
@@ -230,20 +230,20 @@ const npm = {
   name: 'Node Package Manager',
 };
 
-const macOS = {
-  img: '',
-  name: 'Mac OS',
-};
+// const macOS = {
+//   img: '',
+//   name: 'Mac OS',
+// };
 
-const windowsOS = {
-  img: '',
-  name: 'Windows OS',
-};
+// const windowsOS = {
+//   img: '',
+//   name: 'Windows OS',
+// };
 
-const microsoftSQLManagementServerStudio = {
-  img: '',
-  name: 'Microsoft SQL Server Management Studio',
-};
+// const microsoftSQLManagementServerStudio = {
+//   img: '',
+//   name: 'Microsoft SQL Server Management Studio',
+// };
 
 const carouselSkillsArray = [
   apollo,

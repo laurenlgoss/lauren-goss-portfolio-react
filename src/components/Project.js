@@ -14,17 +14,19 @@ function Project({
   title,
 }) {
   return (
-    <div
-      className='card project-card project-border'
-      style={{ width: 'auto' }}
-    >
+    <div className="card project-card project-border" style={{ width: 'auto' }}>
       <div className="project-img-container">
-        <img className="card-img-top" src={imgSrc} alt="Card image cap" />
+        <img
+          className="card-img-top"
+          src={imgSrc}
+          alt={`${title} dashboard`}
+        />
         <div className="project-icons-container">
           <a
             href={githubRepo}
             target="_blank"
             className={`${lightIcons ? 'light' : ''}`}
+            rel="noreferrer"
           >
             <FontAwesomeIcon icon={['fab', 'github']} size="3x" />
           </a>
@@ -33,6 +35,7 @@ function Project({
               href={deployedApp}
               target="_blank"
               className={`${lightIcons ? 'light' : ''}`}
+              rel="noreferrer"
             >
               <FontAwesomeIcon icon={['fas', 'external-link-alt']} size="3x" />
             </a>
