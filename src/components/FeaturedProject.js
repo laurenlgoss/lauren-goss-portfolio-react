@@ -18,10 +18,10 @@ function FeaturedProject({
         <p className="alt-font">{description}</p>
         <div className="text-right">
           {languages.map((language) => {
-            const badgeColor = getBadgeColor(language);
-
             return (
-              <span class={`badge badge-pill ${badgeColor}`}>{language}</span>
+              <span class={`badge badge-pill ${getBadgeColor(language)}`}>
+                {language}
+              </span>
             );
           })}
         </div>

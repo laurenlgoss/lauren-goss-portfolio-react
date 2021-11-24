@@ -286,7 +286,7 @@ function AboutMe() {
         <h1 className="section-title" id="about-me-title">
           about
         </h1>
-        <div className="col-8 offset-2">
+        <div className="col-md-10 offset-md-1 about-me-excerpt">
           <p>
             I am presently residing in Hickory, NC. I graduated Summa Cum Laude
             from North Carolina State University in May 2020, obtaining my

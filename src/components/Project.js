@@ -16,11 +16,7 @@ function Project({
   return (
     <div className="card project-card project-border" style={{ width: 'auto' }}>
       <div className="project-img-container">
-        <img
-          className="card-img-top"
-          src={imgSrc}
-          alt={`${title} dashboard`}
-        />
+        <img className="card-img-top" src={imgSrc} alt={`${title} dashboard`} />
         <div className="project-icons-container">
           <a
             href={githubRepo}
@@ -51,10 +47,10 @@ function Project({
           className={`${columnSide === 'left' ? ' text-right' : ' text-left'}`}
         >
           {languages.map((language) => {
-            const badgeColor = getBadgeColor(language);
-
             return (
-              <span class={`badge badge-pill ${badgeColor}`}>{language}</span>
+              <span class={`badge badge-pill ${getBadgeColor(language)}`}>
+                {language}
+              </span>
             );
           })}
         </div>

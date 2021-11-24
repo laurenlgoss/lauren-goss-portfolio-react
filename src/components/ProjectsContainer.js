@@ -34,59 +34,9 @@ const featuredProject = {
   title: "Artin' Around",
 };
 
-const skyGazer = {
-  // borderColor: 'yellowGreen',
-  columnSide: 'left',
-  deployedApp: 'https://pamtheham.github.io/Sky-Gazer/',
-  description:
-    "// dashboard that uses the user's location and chosen satellite to determine the dates/times of that satellite's passovers for the next 7 days and their predicted visiblity.",
-  githubRepo: 'https://github.com/laurenlgoss/Sky-Gazer',
-  imgSrc: skyGazerImg,
-  languages: ['API', 'Bulma', 'CSS', 'Frontend', 'HTML', 'JavaScript', 'Local Storage'],
-  lightIcons: false,
-  title: 'Sky Gazer',
-};
+const projectsArray = [];
 
-const employeeTracker = {
-  // borderColor: 'bluePink',
-  columnSide: 'left',
-  deployedApp: '',
-  description:
-    '// backend JavaScript application that allows the user to interact with an employee database through the command line.',
-  githubRepo: 'https://github.com/laurenlgoss/employee-tracker',
-  imgSrc: employeeTrackerImg,
-  languages: ['Backend', 'Inquirer.js', 'JavaScript', 'MySQL', 'Node.js'],
-  lightIcons: true,
-  title: 'Employee Tracker',
-};
-
-const weatherDashboard = {
-  // borderColor: 'yellowGreen',
-  columnSide: 'right',
-  deployedApp: 'https://laurenlgoss.github.io/weather-dashboard/',
-  description:
-    '// weather dashboard that displays the current weather and 5-day forecast for whichever city the user inputs.',
-  githubRepo: 'https://github.com/laurenlgoss/weather-dashboard',
-  imgSrc: weatherDashboardImg,
-  languages: ['API', 'Bootstrap', 'CSS', 'Frontend', 'HTML', 'JavaScript', 'Local Storage'],
-  lightIcons: false,
-  title: 'Weather Dashboard',
-};
-
-// const codeQuiz = {
-//   borderColor: 'bluePink',
-//   columnSide: 'left',
-//   deployedApp: 'https://laurenlgoss.github.io/code-quiz/',
-//   description:
-//     '// multiple choice quiz that tests the user on knowledge of HTML, CSS, and JavaScript concepts.',
-//   githubRepo: 'https://github.com/laurenlgoss/code-quiz',
-//   imgSrc: codeQuizImg,
-//   languages: ['CSS', 'HTML', 'JavaScript', 'Local Storage'],
-//   lightIcons: false,
-//   title: 'Code Quiz',
-// };
-
-const appliTrak = {
+projectsArray.push({
   // borderColor: 'bluePink',
   columnSide: 'right',
   deployedApp: 'https://immense-eyrie-11789.herokuapp.com/',
@@ -109,9 +59,59 @@ const appliTrak = {
   ],
   lightIcons: false,
   title: 'AppliTrak',
-};
+});
 
-const projectsArray = [skyGazer, appliTrak, weatherDashboard, employeeTracker];
+projectsArray.push({
+  // borderColor: 'yellowGreen',
+  columnSide: 'left',
+  deployedApp: 'https://pamtheham.github.io/Sky-Gazer/',
+  description:
+    "// dashboard that uses the user's location and chosen satellite to determine the dates/times of that satellite's passovers for the next 7 days and their predicted visiblity.",
+  githubRepo: 'https://github.com/laurenlgoss/Sky-Gazer',
+  imgSrc: skyGazerImg,
+  languages: ['API', 'Bulma', 'CSS', 'Frontend', 'HTML', 'JavaScript', 'Local Storage'],
+  lightIcons: false,
+  title: 'Sky Gazer',
+});
+
+projectsArray.push({
+  // borderColor: 'bluePink',
+  columnSide: 'left',
+  deployedApp: '',
+  description:
+    '// backend JavaScript application that allows the user to interact with an employee database through the command line.',
+  githubRepo: 'https://github.com/laurenlgoss/employee-tracker',
+  imgSrc: employeeTrackerImg,
+  languages: ['Backend', 'Inquirer.js', 'JavaScript', 'MySQL', 'Node.js'],
+  lightIcons: true,
+  title: 'Employee Tracker',
+});
+
+projectsArray.push({
+  // borderColor: 'yellowGreen',
+  columnSide: 'right',
+  deployedApp: 'https://laurenlgoss.github.io/weather-dashboard/',
+  description:
+    '// weather dashboard that displays the current weather and 5-day forecast for whichever city the user inputs.',
+  githubRepo: 'https://github.com/laurenlgoss/weather-dashboard',
+  imgSrc: weatherDashboardImg,
+  languages: ['API', 'Bootstrap', 'CSS', 'Frontend', 'HTML', 'JavaScript', 'Local Storage'],
+  lightIcons: false,
+  title: 'Weather Dashboard',
+});
+
+// const codeQuiz = {
+//   borderColor: 'bluePink',
+//   columnSide: 'left',
+//   deployedApp: 'https://laurenlgoss.github.io/code-quiz/',
+//   description:
+//     '// multiple choice quiz that tests the user on knowledge of HTML, CSS, and JavaScript concepts.',
+//   githubRepo: 'https://github.com/laurenlgoss/code-quiz',
+//   imgSrc: codeQuizImg,
+//   languages: ['CSS', 'HTML', 'JavaScript', 'Local Storage'],
+//   lightIcons: false,
+//   title: 'Code Quiz',
+// };
 
 function ProjectsContainer() {
   return (

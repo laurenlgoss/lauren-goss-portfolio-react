@@ -94,20 +94,12 @@ body {
 
 .headshot {
   border-radius: 50%;
-  max-height: 300px;
+  max-height: 350px;
   position: absolute;
-  left: -150px;
+  left: -175px;
   bottom: 50px;
-}
-
-.headshot-decoration {
-  position: absolute;
   border: 5px solid white;
-  border-radius: 50%;
-  height: 340px;
-  left: -170px;
-  bottom: 30px;
-  width: 340px;
+  padding: 1em;
 }
 
 .intro h5 {
@@ -142,7 +134,7 @@ body {
   bottom: -91px;
 }
 
-#about-me .row .col-8 {
+.about-me-excerpt {
   margin-bottom: var(--vertical-margin);
 }
 
@@ -256,7 +248,10 @@ body {
   background-color: rgb(41, 101, 241);
 }
 
-.mern-stack, .fullstack, .frontend, .backend {
+.mern-stack,
+.fullstack,
+.frontend,
+.backend {
   background-color: rgb(249, 65, 68);
 }
 
@@ -408,6 +403,10 @@ body {
   bottom: -89px;
 }
 
+#contact .row {
+  padding: 0em 2em;
+}
+
 .resume-download {
   color: var(--right-header);
   text-decoration: none;
@@ -422,4 +421,87 @@ body {
 
 .copyright {
   color: gray;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 767px) {
+  #about-me .row .col-md-4 {
+    padding: 0em;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .headshot {
+    left: 25px;
+    bottom: 312px;
+  }
+}
+
+@media screen and (max-width: 767px) and (min-width: 376px) {
+  .headshot {
+    left: 40px;
+    bottom: 220px;
+  }
+}
+
+/* Bootstrap sm */
+@media screen and (max-width: 575px) {
+  .header-container .row {
+    height: fit-content;
+  }
+
+  .header-container .row .right-header {
+    padding-top: 380px;
+  }
+}
+
+/* Bootstrap md -> sm */
+@media screen and (max-width: 767px) and (min-width: 576px) {
+  .header-container .row {
+    height: 575px;
+  }
+}
+
+/* Bootstrap md */
+@media screen and (max-width: 767px) {
+  .about-me-excerpt {
+    padding: 0em 2em;
+  }
+
+  .header-container .row .right-header .row {
+    margin: 0em 1em;
+  }
+
+  .header-container .row .right-header .row {
+    align-content: end !important;
+  }
+
+  .my-name {
+    margin-bottom: 0.5em;
+  }
+}
+
+/* Bootstrap md -> lg */
+@media screen and (max-width: 991px) and (min-width: 768px) {
+  .headshot {
+    left: -400px;
+  }
+}
+
+/* Bootstrap lg */
+@media screen and (max-width: 991px) {
+  .nav-container .row .col-3 {
+    background-color: var(--right-header);
+  }
+
+  .header-container .left-header {
+    background-color: var(--right-header);
+  }
+
+  .header-container .row .right-header .row {
+    margin-right: 2em;
+  }
+
+  .project-card {
+    padding: 2em;
+  }
 }

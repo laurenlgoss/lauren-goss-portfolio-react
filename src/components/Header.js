@@ -7,14 +7,13 @@ function Header() {
   return (
     <div className="header-container">
       <div className="row">
-        <div className="col-3 left-header"></div>
-        <div className="col-9 right-header">
-          <div className="row">
-            <div className="col-3">
+        <div className="col-md-6 col-lg-3 left-header"></div>
+        <div className="col-md-6 col-lg-9 right-header">
+          <div className="row align-content-center">
+            <div className="col-lg-3">
               <img src={headshotImg} className="headshot" alt="Lauren Goss Headshot" />
-              <div className="headshot-decoration"></div>
             </div>
-            <div className="col-6 align-self-center intro">
+            <div className="col-lg-6 intro">
               <h5>
                 <span className="alt-font hello">
                   <FontAwesomeIcon icon={['fas', 'quote-left']} /> Hello world{' '}
