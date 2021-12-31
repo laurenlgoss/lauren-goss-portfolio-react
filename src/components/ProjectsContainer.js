@@ -4,6 +4,7 @@ import Project from './Project';
 
 import artinAroundImg from '../images/projects/artin-around.png';
 import appliTrakImg from '../images/projects/applitrak-dashboard.png';
+import pokevImg from '../images/projects/pokev-tracker.png';
 import skyGazerImg from '../images/projects/sky-gazer.png';
 import employeeTrackerImg from '../images/projects/employee-tracker.gif';
 import weatherDashboardImg from '../images/projects/weather-dashboard.png';
@@ -23,6 +24,7 @@ const featuredProject = {
     'GraphQL',
     'HTML',
     'JavaScript',
+    'Local Storage',
     'Node.js',
     'Material UI',
     'MERN Stack',
@@ -63,6 +65,34 @@ projectsArray.push({
 
 projectsArray.push({
   // borderColor: 'yellowGreen',
+  columnSide: 'right',
+  deployedApp: 'https://pokev-tracker.herokuapp.com/',
+  description:
+    '// MERN stack application that allows the user to easily track their Pokémons\' Effort Values while training.',
+  githubRepo: 'https://github.com/laurenlgoss/pokemon-tracker',
+  imgSrc: pokevImg,
+  languages: [
+    'API',
+    'Apollo',
+    'Bootstrap',
+    'CSS',
+    'Express.js',
+    'GraphQL',
+    'HTML',
+    'JavaScript',
+    'Local Storage',
+    'Node.js',
+    'MERN Stack',
+    'MongoDB',
+    'Mongoose',
+    'ReactJS',
+  ],
+  lightIcons: false,
+  title: 'PokÉV Tracker',
+});
+
+projectsArray.push({
+  // borderColor: 'yellowGreen',
   columnSide: 'left',
   deployedApp: 'https://pamtheham.github.io/Sky-Gazer/',
   description:
@@ -74,22 +104,22 @@ projectsArray.push({
   title: 'Sky Gazer',
 });
 
-projectsArray.push({
-  // borderColor: 'bluePink',
-  columnSide: 'left',
-  deployedApp: '',
-  description:
-    '// backend JavaScript application that allows the user to interact with an employee database through the command line.',
-  githubRepo: 'https://github.com/laurenlgoss/employee-tracker',
-  imgSrc: employeeTrackerImg,
-  languages: ['Backend', 'Inquirer.js', 'JavaScript', 'MySQL', 'Node.js'],
-  lightIcons: true,
-  title: 'Employee Tracker',
-});
+// projectsArray.push({
+//   // borderColor: 'bluePink',
+//   columnSide: 'left',
+//   deployedApp: '',
+//   description:
+//     '// backend JavaScript application that allows the user to interact with an employee database through the command line.',
+//   githubRepo: 'https://github.com/laurenlgoss/employee-tracker',
+//   imgSrc: employeeTrackerImg,
+//   languages: ['Backend', 'Inquirer.js', 'JavaScript', 'MySQL', 'Node.js'],
+//   lightIcons: true,
+//   title: 'Employee Tracker',
+// });
 
 projectsArray.push({
   // borderColor: 'yellowGreen',
-  columnSide: 'right',
+  columnSide: 'left',
   deployedApp: 'https://laurenlgoss.github.io/weather-dashboard/',
   description:
     '// weather dashboard that displays the current weather and 5-day forecast for whichever city the user inputs.',
