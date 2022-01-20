@@ -48,7 +48,7 @@ function Project({
         >
           {languages.map((language) => {
             return (
-              <span class={`badge badge-pill ${getBadgeColor(language)}`}>
+              <span className={`badge badge-pill ${getBadgeColor(language)}`}>
                 {language}
               </span>
             );

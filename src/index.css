@@ -19,6 +19,7 @@ body {
   background-color: black;
   font-family: sans-serif;
   color: white;
+  overflow-x: hidden;
 }
 
 .alt-font {
@@ -415,6 +416,20 @@ body {
 .resume-download:hover {
   color: var(--left-header);
   text-decoration: none;
+}
+
+.form-control {
+  border-radius: 0px;
+}
+
+.send-message {
+  background-color: var(--right-header);
+  color: white;
+}
+
+.send-message:hover {
+  background-color: var(--left-header);
+  color: white;
 }
 
 /* Footer */

@@ -6,7 +6,7 @@ import artinAroundImg from '../images/projects/artin-around.png';
 import appliTrakImg from '../images/projects/applitrak-dashboard.png';
 import pokevImg from '../images/projects/pokev-tracker.png';
 import skyGazerImg from '../images/projects/sky-gazer.png';
-import employeeTrackerImg from '../images/projects/employee-tracker.gif';
+// import employeeTrackerImg from '../images/projects/employee-tracker.gif';
 import weatherDashboardImg from '../images/projects/weather-dashboard.png';
 // import codeQuizImg from '../images/projects/code-quiz.png';
 
