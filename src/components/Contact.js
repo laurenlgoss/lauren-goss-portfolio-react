@@ -14,8 +14,16 @@ function Contact() {
 
     setFormState({ ...formState, [name]: value });
     console.log(formState);
+  }
 
+  function handleFormSubmit() {
     // TODO: Send email to me
+
+    setFormState({
+      name: '',
+      email: '',
+      message: '',
+    });
   }
 
   return (
@@ -43,40 +51,40 @@ function Contact() {
           </h5>
         </div>
       </div>
-      <form>
-        <div className="row">
-          <div className="col-md-6">
-            <input
-              className="form-control mb-3 alt-font"
-              name="name"
-              placeholder="name"
-              onChange={handleFormChange}
-              value={formState.name}
-            />
-          </div>
-          <div className="col-md-6">
-            <input
-              className="form-control mb-3 alt-font"
-              name="email"
-              placeholder="email"
-              onChange={handleFormChange}
-              value={formState.email}
-            />
-          </div>
-          <div className="col-12">
-            <textarea
-              className="form-control mb-3 alt-font"
-              name="message"
-              placeholder="message"
-              onChange={handleFormChange}
-              value={formState.message}
-            />
-          </div>
-          <div className="col-12 text-center">
-            <button className="btn send-message mb-5">Send Message</button>
-          </div>
+      <div className="row">
+        <div className="col-md-6">
+          <input
+            className="form-control mb-3 alt-font"
+            name="name"
+            placeholder="name"
+            onChange={handleFormChange}
+            value={formState.name}
+          />
         </div>
-      </form>
+        <div className="col-md-6">
+          <input
+            className="form-control mb-3 alt-font"
+            name="email"
+            placeholder="email"
+            onChange={handleFormChange}
+            value={formState.email}
+          />
+        </div>
+        <div className="col-12">
+          <textarea
+            className="form-control mb-3 alt-font"
+            name="message"
+            placeholder="message"
+            onChange={handleFormChange}
+            value={formState.message}
+          />
+        </div>
+        <div className="col-12 text-center">
+          <button className="btn send-message mb-5" onClick={handleFormSubmit}>
+            Send Message
+          </button>
+        </div>
+      </div>
     </div>
   );
 }
