@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
+import emailjs from '@emailjs/browser';
 
 import resume from '../images/Lauren Goss Resume.pdf';
+
+require('dotenv').config();
 
 function Contact() {
   const [formState, setFormState] = useState({
@@ -16,8 +19,18 @@ function Contact() {
     console.log(formState);
   }
 
-  function handleFormSubmit() {
-    // TODO: Send email to me
+  async function handleFormSubmit(event) {
+    event.preventDefault();
+
+    const serviceId = process.env.REACT_APP_SERVICE_ID;
+    const userId = process.env.REACT_APP_USER_ID;
+    const templateId = process.env.REACT_APP_TEMPLATE_ID;
+
+    // Send email to me using EmailJS
+    await emailjs.send(serviceId, templateId, formState, userId);
+
+    // TODO: Add alert that email was successfully sent
+
 
     setFormState({
       name: '',
@@ -45,7 +58,7 @@ function Contact() {
               className="resume-download"
               rel="noreferrer"
             >
-              downloadHere
+              viewHere
             </a>
             {` }`}
           </h5>
@@ -65,7 +78,7 @@ function Contact() {
           <input
             className="form-control mb-3 alt-font"
             name="email"
-            placeholder="email"
+            placeholder="your email"
             onChange={handleFormChange}
             value={formState.email}
           />
