@@ -9,6 +9,8 @@ class SmallProject extends TopProject {
     imgSrc,
     languages = [],
     lightIcons = false,
+    myRole = '',
+    numOfGroupMembers = 1,
     title = ''
   ) {
     super(
@@ -18,6 +20,8 @@ class SmallProject extends TopProject {
       imgSrc,
       languages,
       lightIcons,
+      myRole,
+      numOfGroupMembers,
       title
     );
     this.columnSide = columnSide;

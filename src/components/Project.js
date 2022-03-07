@@ -11,6 +11,8 @@ function Project({
   imgSrc,
   languages,
   lightIcons,
+  myRole,
+  numOfGroupMembers,
   title,
 }) {
   return (
@@ -43,9 +45,30 @@ function Project({
       <div className={`${columnSide === 'left' ? 'text-right' : ''}`}>
         <h4 className="project-title">{title}</h4>
         <p className="alt-font">{description}</p>
-        <div
-          className={`${columnSide === 'left' ? ' text-right' : ' text-left'}`}
-        >
+        <p>
+          {columnSide === 'right' ? (
+            <span className={`badge badge-pill default-pill`}>
+              {numOfGroupMembers > 1 ? 'Collaborative' : 'Solo'}
+            </span>
+          ) : null}
+          {[...Array(numOfGroupMembers)].map((element) => {
+            return (
+              <FontAwesomeIcon
+                icon={['fas', 'user']}
+                size="2x"
+                className="mx-1"
+                style={{ verticalAlign: 'middle' }}
+              />
+            );
+          })}
+          {columnSide === 'left' ? (
+            <span className={`badge badge-pill default-pill`}>
+              {numOfGroupMembers > 1 ? 'Collaborative' : 'Solo'}
+            </span>
+          ) : null}
+          {/* {myRole ? myRole : null} */}
+        </p>
+        <div>
           {languages.map((language) => {
             return (
               <span className={`badge badge-pill ${getBadgeColor(language)}`}>

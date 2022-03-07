@@ -6,6 +6,8 @@ class TopProject {
     imgSrc,
     languages = [],
     lightIcons = false,
+    myRole = '',
+    numOfGroupMembers = 1,
     title = ''
   ) {
     this.deployedApp = deployedApp;
@@ -14,6 +16,8 @@ class TopProject {
     this.imgSrc = imgSrc;
     this.languages = languages;
     this.lightIcons = lightIcons;
+    this.myRole = myRole;
+    this.numOfGroupMembers = numOfGroupMembers;
     this.title = title;
   }
 }

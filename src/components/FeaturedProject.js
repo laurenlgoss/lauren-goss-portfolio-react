@@ -9,6 +9,8 @@ function FeaturedProject({
   imgSrc,
   languages,
   lightIcons,
+  myRole,
+  numOfGroupMembers,
   title,
 }) {
   return (
@@ -16,6 +18,22 @@ function FeaturedProject({
       <div className="col-lg-6 text-right">
         <h4 className="project-title">{title}</h4>
         <p className="alt-font">{description}</p>
+        <p>
+          {[...Array(numOfGroupMembers)].map((element) => {
+            return (
+              <FontAwesomeIcon
+                icon={['fas', 'user']}
+                size="2x"
+                className="mx-1"
+                style={{ verticalAlign: 'middle' }}
+              />
+            );
+          })}
+          <span className={`badge badge-pill default-pill`}>
+            {numOfGroupMembers > 1 ? 'Collaborative' : 'Solo'}
+          </span>
+          {/* {myRole ? myRole : null} */}
+        </p>
         <div className="text-right">
           {languages.map((language) => {
             return (

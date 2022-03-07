@@ -34,6 +34,8 @@ const featuredProject = new TopProject(
     'ReactJS',
   ],
   false,
+  'test',
+  4,
   "Artin' Around"
 );
 
@@ -60,6 +62,8 @@ projectsArray.push(
       'Sequelize',
     ],
     false,
+    'myRole',
+    4,
     'AppliTrak'
   )
 );
@@ -88,6 +92,8 @@ projectsArray.push(
       'ReactJS',
     ],
     false,
+    '',
+    1,
     'PokÉV Tracker'
   )
 );
@@ -101,6 +107,8 @@ projectsArray.push(
     skyGazerImg,
     ['API', 'Bulma', 'CSS', 'Frontend', 'HTML', 'JavaScript', 'Local Storage'],
     false,
+    'myRole',
+    4,
     'Sky Gazer'
   )
 );
@@ -135,6 +143,8 @@ projectsArray.push(
       'Local Storage',
     ],
     false,
+    '',
+    1,
     'Weather Dashboard'
   )
 );
@@ -166,6 +176,8 @@ function ProjectsContainer() {
           imgSrc={featuredProject.imgSrc}
           languages={featuredProject.languages}
           lightIcons={featuredProject.lightIcons}
+          myRole={featuredProject.myRole}
+          numOfGroupMembers={featuredProject.numOfGroupMembers}
           title={featuredProject.title}
         />
       </div>
@@ -187,6 +199,8 @@ function ProjectsContainer() {
                   imgSrc={project.imgSrc}
                   languages={project.languages}
                   lightIcons={project.lightIcons}
+                  myRole={project.myRole}
+                  numOfGroupMembers={project.numOfGroupMembers}
                   title={project.title}
                 />
               );
@@ -207,6 +221,9 @@ function ProjectsContainer() {
                   githubRepo={project.githubRepo}
                   imgSrc={project.imgSrc}
                   languages={project.languages}
+                  lightIcons={project.lightIcons}
+                  myRole={project.myRole}
+                  numOfGroupMembers={project.numOfGroupMembers}
                   title={project.title}
                 />
               );
