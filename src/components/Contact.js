@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import resume from '../images/Lauren Goss Resume.pdf';
 
@@ -12,6 +13,9 @@ function Contact() {
     message: '',
   });
 
+  const [validationMessage, setValidationMessage] = useState(false);
+  const [successfullySentMessage, setSuccessfullySentMessage] = useState(false);
+
   function handleFormChange(event) {
     const { name, value } = event.target;
 
@@ -22,21 +26,28 @@ function Contact() {
   async function handleFormSubmit(event) {
     event.preventDefault();
 
-    const serviceId = process.env.REACT_APP_SERVICE_ID;
-    const userId = process.env.REACT_APP_USER_ID;
-    const templateId = process.env.REACT_APP_TEMPLATE_ID;
+    if (formState.name && formState.email && formState.message) {
+      const serviceId = process.env.REACT_APP_SERVICE_ID;
+      const userId = process.env.REACT_APP_USER_ID;
+      const templateId = process.env.REACT_APP_TEMPLATE_ID;
 
-    // Send email to me using EmailJS
-    await emailjs.send(serviceId, templateId, formState, userId);
+      // Send email to me using EmailJS
+      await emailjs.send(serviceId, templateId, formState, userId);
 
-    // TODO: Add alert that email was successfully sent
+      // Alert email was successfully sent
+      setSuccessfullySentMessage(true);
+      setValidationMessage(false);
 
-
-    setFormState({
-      name: '',
-      email: '',
-      message: '',
-    });
+      setFormState({
+        name: '',
+        email: '',
+        message: '',
+      });
+    } else {
+      // Show validation message
+      setSuccessfullySentMessage(false);
+      setValidationMessage(true);
+    }
   }
 
   return (
@@ -93,9 +104,18 @@ function Contact() {
           />
         </div>
         <div className="col-12 text-center">
-          <button className="btn send-message mb-5" onClick={handleFormSubmit}>
+          <button className="btn send-message" onClick={handleFormSubmit}>
             Send Message
           </button>
+          {successfullySentMessage ? (
+            <div class="mt-2" style={{ color: '#82cc2a' }}>
+              <FontAwesomeIcon icon={['fas', 'check']} /> Message successfully
+              sent
+            </div>
+          ) : null}
+          {validationMessage ? (
+            <div class="text-danger mt-2">* All fields required</div>
+          ) : null}
         </div>
       </div>
     </div>
