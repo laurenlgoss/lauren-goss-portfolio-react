@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/lauren-goss-portfolio-react/static/css/main.d4444766.chunk.css",
-    "main.js": "/lauren-goss-portfolio-react/static/js/main.5c594289.chunk.js",
-    "main.js.map": "/lauren-goss-portfolio-react/static/js/main.5c594289.chunk.js.map",
+    "main.js": "/lauren-goss-portfolio-react/static/js/main.011dc1c1.chunk.js",
+    "main.js.map": "/lauren-goss-portfolio-react/static/js/main.011dc1c1.chunk.js.map",
     "runtime-main.js": "/lauren-goss-portfolio-react/static/js/runtime-main.7aff6a07.js",
     "runtime-main.js.map": "/lauren-goss-portfolio-react/static/js/runtime-main.7aff6a07.js.map",
     "static/css/2.0a9ec390.chunk.css": "/lauren-goss-portfolio-react/static/css/2.0a9ec390.chunk.css",
-    "static/js/2.113d7e24.chunk.js": "/lauren-goss-portfolio-react/static/js/2.113d7e24.chunk.js",
-    "static/js/2.113d7e24.chunk.js.map": "/lauren-goss-portfolio-react/static/js/2.113d7e24.chunk.js.map",
+    "static/js/2.6128e8db.chunk.js": "/lauren-goss-portfolio-react/static/js/2.6128e8db.chunk.js",
+    "static/js/2.6128e8db.chunk.js.map": "/lauren-goss-portfolio-react/static/js/2.6128e8db.chunk.js.map",
     "index.html": "/lauren-goss-portfolio-react/index.html",
     "static/css/2.0a9ec390.chunk.css.map": "/lauren-goss-portfolio-react/static/css/2.0a9ec390.chunk.css.map",
     "static/css/main.d4444766.chunk.css.map": "/lauren-goss-portfolio-react/static/css/main.d4444766.chunk.css.map",
-    "static/js/2.113d7e24.chunk.js.LICENSE.txt": "/lauren-goss-portfolio-react/static/js/2.113d7e24.chunk.js.LICENSE.txt",
+    "static/js/2.6128e8db.chunk.js.LICENSE.txt": "/lauren-goss-portfolio-react/static/js/2.6128e8db.chunk.js.LICENSE.txt",
     "static/media/Headshot.accb493b.jpg": "/lauren-goss-portfolio-react/static/media/Headshot.accb493b.jpg",
-    "static/media/Lauren Goss Resume.7a8674e9.pdf": "/lauren-goss-portfolio-react/static/media/Lauren Goss Resume.7a8674e9.pdf",
+    "static/media/Lauren Goss Resume.8e5e6fdd.pdf": "/lauren-goss-portfolio-react/static/media/Lauren Goss Resume.8e5e6fdd.pdf",
     "static/media/applitrak-dashboard.20269918.png": "/lauren-goss-portfolio-react/static/media/applitrak-dashboard.20269918.png",
     "static/media/artin-around.3485bd8c.png": "/lauren-goss-portfolio-react/static/media/artin-around.3485bd8c.png",
     "static/media/bootstrap.07d97f57.png": "/lauren-goss-portfolio-react/static/media/bootstrap.07d97f57.png",
@@ -25,8 +25,8 @@
   "entrypoints": [
     "static/js/runtime-main.7aff6a07.js",
     "static/css/2.0a9ec390.chunk.css",
-    "static/js/2.113d7e24.chunk.js",
+    "static/js/2.6128e8db.chunk.js",
     "static/css/main.d4444766.chunk.css",
-    "static/js/main.5c594289.chunk.js"
+    "static/js/main.011dc1c1.chunk.js"
   ]
 }
