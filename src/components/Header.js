@@ -23,7 +23,7 @@ function Header() {
               </h5>
               <h1 className="my-name">Lauren Goss</h1>
               <p>
-                I am a Full-Stack Web Developer, recently graduated from the UNC
+                I am a Full-Stack Web Developer, graduated from the UNC
                 Coding Boot Camp for Full-Stack Web Development.
               </p>
             </div>
