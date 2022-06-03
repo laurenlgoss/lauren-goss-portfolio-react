@@ -53,7 +53,7 @@ function Contact() {
   return (
     <div id="contact">
       <div className="row" style={{ height: '0', position: 'relative' }}>
-        <div className="col text-right">
+        <div className="col text-end">
           <h1 className="section-title" id="contact-title">
             contact
           </h1>
@@ -104,7 +104,7 @@ function Contact() {
           />
         </div>
         <div className="col-12 text-center">
-          <button className="btn send-message" onClick={handleFormSubmit}>
+          <button className="send-message" onClick={handleFormSubmit}>
             Send Message
           </button>
           {successfullySentMessage ? (

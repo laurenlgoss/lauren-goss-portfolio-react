@@ -15,7 +15,7 @@ function FeaturedProject({
 }) {
   return (
     <>
-      <div className="col-lg-6 text-right">
+      <div className="col-lg-6 text-end">
         <h4 className="project-title">{title}</h4>
         <p className="alt-font">{description}</p>
         <p>
@@ -34,7 +34,7 @@ function FeaturedProject({
           </span>
           {/* {myRole ? myRole : null} */}
         </p>
-        <div className="text-right">
+        <div className="text-end">
           {languages.map((language) => {
             return (
               <span className={`badge badge-pill ${getBadgeColor(language)}`}>

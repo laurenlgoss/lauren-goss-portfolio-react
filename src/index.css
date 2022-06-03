@@ -7,14 +7,6 @@
   --alt-font-color: #1d1d1d;
 }
 
-.text-right {
-  text-align: right;
-}
-
-.text-left {
-  text-align: left;
-}
-
 body {
   background-color: black;
   font-family: sans-serif;
@@ -30,34 +22,54 @@ body {
   border-radius: 0px;
 }
 
+.between-padding {
+  padding-top: var(--vertical-margin);
+}
+
 /* Navbar */
+
+.nav-container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  padding: 0.5em;
+  background-color: rgb(0, 0, 0, 0.5);
+}
 
 .nav-container .row {
   height: 40px;
 }
 
-.nav-container .left-header {
+/* .nav-container .left-header {
   padding-left: 1.5em;
 }
 
 .nav-container .right-header {
   padding-right: 1.5em;
-}
+} */
 
-.left-nav a {
+.nav-container a {
   color: white;
-}
-
-.left-nav a:hover {
-  color: var(--right-header);
+  font-family: 'Inconsolata';
+  font-size: 17px;
   text-decoration: none;
 }
 
-.github-icon {
-  margin-left: 0.25em;
+.nav-container a:hover {
+  color: var(--left-header);
 }
 
-.right-nav a {
+/* .left-nav a:hover {
+  color: var(--right-header);
+  text-decoration: none;
+} */
+
+.github-icon {
+  margin-left: 0.5em;
+}
+
+/* .right-nav a {
   text-decoration: none;
   color: white;
   font-family: 'Inconsolata';
@@ -68,39 +80,39 @@ body {
 .right-nav a:hover {
   color: var(--left-header);
   border-bottom: 2px solid;
+} */
+
+#projects-nav,
+#contact-nav {
+  margin-left: 0.3em;
 }
 
 /* Intro */
 
 .header-container {
-  margin-bottom: var(--vertical-margin);
+  position: relative;
 }
 
 .header-container .row {
-  height: 400px;
-}
-
-.left-header {
-  background-color: var(--left-header);
-}
-
-.right-header {
+  height: 100vh;
   background-color: var(--right-header);
-  position: relative;
 }
 
 .hello {
   padding-right: 5px;
 }
 
+.Typewriter__cursor {
+  color: var(--left-header); /* Override typewriter-effect color */
+}
+
+.headshot-col {
+  border-right: 2px dotted rgb(255, 255, 255, 0.5);
+}
+
 .headshot {
   border-radius: 50%;
-  max-height: 350px;
-  position: absolute;
-  left: -175px;
-  bottom: 50px;
-  border: 5px solid white;
-  padding: 1em;
+  max-height: 500px;
 }
 
 .intro h5 {
@@ -108,9 +120,16 @@ body {
 }
 
 .my-name {
-  margin-bottom: 1em;
-  font-size: 60px;
+  font-size: calc(40px + 4.3vw);
   font-weight: bold;
+  letter-spacing: -2.5px;
+}
+
+.down-arrow {
+  position: absolute;
+  bottom: 10px;
+  left: 48%;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .section-title {
@@ -125,7 +144,7 @@ body {
 }
 
 .carousel {
-  margin-bottom: var(--vertical-margin);
+  /* margin-bottom: var(--vertical-margin); */
 }
 
 /* About Me */
@@ -423,12 +442,15 @@ body {
 }
 
 .send-message {
-  background-color: var(--right-header);
+  border-radius: 0;
+  background-color: transparent;
+  padding: 0.5em 1em;
+  border: 2px solid var(--right-header);
   color: white;
 }
 
 .send-message:hover {
-  background-color: var(--left-header);
+  border-color: var(--left-header);
   color: white;
 }
 
@@ -438,56 +460,10 @@ body {
   color: gray;
 }
 
-@media screen and (max-width: 1024px) and (min-width: 767px) {
-  #about-me .row .col-md-4 {
-    padding: 0em;
-  }
-}
-
-@media screen and (max-width: 375px) {
-  .headshot {
-    left: 25px;
-    bottom: 312px;
-  }
-}
-
-@media screen and (max-width: 767px) and (min-width: 376px) {
-  .headshot {
-    left: 40px;
-    bottom: 220px;
-  }
-}
-
-/* Bootstrap sm */
-@media screen and (max-width: 575px) {
-  .header-container .row {
-    height: fit-content;
-  }
-
-  .header-container .row .right-header {
-    padding-top: 380px;
-  }
-}
-
-/* Bootstrap md -> sm */
-@media screen and (max-width: 767px) and (min-width: 576px) {
-  .header-container .row {
-    height: 575px;
-  }
-}
-
 /* Bootstrap md */
 @media screen and (max-width: 767px) {
   .about-me-excerpt {
     padding: 0em 2em;
-  }
-
-  .header-container .row .right-header .row {
-    margin: 0em 1em;
-  }
-
-  .header-container .row .right-header .row {
-    align-content: end !important;
   }
 
   .my-name {
@@ -495,25 +471,10 @@ body {
   }
 }
 
-/* Bootstrap md -> lg */
-@media screen and (max-width: 991px) and (min-width: 768px) {
-  .headshot {
-    left: -400px;
-  }
-}
-
 /* Bootstrap lg */
 @media screen and (max-width: 991px) {
   .nav-container .row .col-3 {
     background-color: var(--right-header);
-  }
-
-  .header-container .left-header {
-    background-color: var(--right-header);
-  }
-
-  .header-container .row .right-header .row {
-    margin-right: 2em;
   }
 
   .project-card {

@@ -281,7 +281,7 @@ const carouselSkillsArray = [
 
 function AboutMe() {
   return (
-    <div id="about-me">
+    <div id="about-me" className="between-padding">
       <div className="row" style={{ position: 'relative' }}>
         <h1 className="section-title" id="about-me-title">
           about

@@ -70,7 +70,7 @@ projectsArray.push(
 
 projectsArray.push(
   new SmallProject(
-    'right',
+    'left',
     'https://pokev-tracker.herokuapp.com/',
     "// MERN stack application that allows the user to easily track their Pokémons' Effort Values while training.",
     'https://github.com/laurenlgoss/pokemon-tracker',
@@ -128,7 +128,7 @@ projectsArray.push(
 
 projectsArray.push(
   new SmallProject(
-    'left',
+    'right',
     'https://laurenlgoss.github.io/weather-dashboard/',
     '// weather dashboard that displays the current weather and 5-day forecast for whichever city the user inputs.',
     'https://github.com/laurenlgoss/weather-dashboard',
@@ -164,7 +164,7 @@ projectsArray.push(
 
 function ProjectsContainer() {
   return (
-    <div id="projects">
+    <div id="projects" className="between-padding">
       <div className="row justify-content-between featured-project">
         <h1 className="section-title" id="projects-title">
           projects

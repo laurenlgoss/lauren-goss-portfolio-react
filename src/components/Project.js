@@ -42,9 +42,11 @@ function Project({
           )}
         </div>
       </div>
-      <div className={`${columnSide === 'left' ? 'text-right' : ''}`}>
+      <div className={`${columnSide === 'left' ? 'text-end' : ''}`}>
         <h4 className="project-title">{title}</h4>
         <p className="alt-font">{description}</p>
+
+        {/* Collaborative VS Solo */}
         <p>
           {columnSide === 'right' ? (
             <span className={`badge badge-pill default-pill`}>
@@ -68,6 +70,7 @@ function Project({
           ) : null}
           {/* {myRole ? myRole : null} */}
         </p>
+
         <div>
           {languages.map((language) => {
             return (
