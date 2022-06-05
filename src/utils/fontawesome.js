@@ -6,7 +6,6 @@ import {
   faDatabase,
   faUser,
   faTools,
-  faExternalLinkAlt,
   faAngleDown,
 } from '@fortawesome/free-solid-svg-icons';
 
@@ -17,7 +16,6 @@ library.add(
   faCheck,
   faDatabase,
   faTools,
-  faExternalLinkAlt,
   faUser,
   faGithub,
   faLinkedin,

@@ -37,18 +37,6 @@ body {
   background-color: rgb(0, 0, 0, 0.5);
 }
 
-.nav-container .row {
-  height: 40px;
-}
-
-/* .nav-container .left-header {
-  padding-left: 1.5em;
-}
-
-.nav-container .right-header {
-  padding-right: 1.5em;
-} */
-
 .nav-container a {
   color: white;
   font-family: 'Inconsolata';
@@ -60,27 +48,9 @@ body {
   color: var(--left-header);
 }
 
-/* .left-nav a:hover {
-  color: var(--right-header);
-  text-decoration: none;
-} */
-
 .github-icon {
   margin-left: 0.5em;
 }
-
-/* .right-nav a {
-  text-decoration: none;
-  color: white;
-  font-family: 'Inconsolata';
-  font-size: 17px;
-  padding: 0.25em;
-}
-
-.right-nav a:hover {
-  color: var(--left-header);
-  border-bottom: 2px solid;
-} */
 
 #projects-nav,
 #contact-nav {
@@ -141,10 +111,6 @@ body {
   font-weight: bold;
   font-size: 200px;
   z-index: -1;
-}
-
-.carousel {
-  /* margin-bottom: var(--vertical-margin); */
 }
 
 /* About Me */
@@ -311,10 +277,6 @@ body {
 
 /* Projects */
 
-/* #projects { */
-/* display: none; */
-/* } */
-
 #projects-title {
   left: -41px;
   bottom: -117px;
@@ -330,22 +292,6 @@ body {
   border: 5px solid lightgray;
   padding: 3em;
 }
-
-/* .royg-border {
-  border-image-source: linear-gradient(to left, lime, var(--left-header));
-  border-radius: 0px;
-  border-image-slice: 1;
-  border-width: 5px;
-  padding: 3em;
-}
-
-.biv-border {
-  border-image-source: linear-gradient(to left, hotpink, var(--right-header));
-  border-radius: 0px;
-  border-image-slice: 1;
-  border-width: 5px;
-  padding: 3em;
-} */
 
 #projects .card-img-top {
   border-radius: 0px;
@@ -445,7 +391,7 @@ body {
   border-radius: 0;
   background-color: transparent;
   padding: 0.5em 1em;
-  border: 2px solid var(--right-header);
+  border: 2px solid white;
   color: white;
 }
 
@@ -473,8 +419,12 @@ body {
 
 /* Bootstrap lg */
 @media screen and (max-width: 991px) {
-  .nav-container .row .col-3 {
-    background-color: var(--right-header);
+  .header-container .row {
+    padding: 0 2em;
+  }
+
+  .headshot-col {
+    border-right: 0px solid transparent;
   }
 
   .project-card {

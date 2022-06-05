@@ -108,10 +108,16 @@ function Contact() {
             Send Message
           </button>
           {successfullySentMessage ? (
-            <div class="mt-2" style={{ color: '#82cc2a' }}>
-              <FontAwesomeIcon icon={['fas', 'check']} /> Message successfully
-              sent
-            </div>
+            <>
+              <div class="mt-2" style={{ color: '#82cc2a' }}>
+                <FontAwesomeIcon icon={['fas', 'check']} /> Message successfully
+                sent
+              </div>
+              <div>
+                Thank you for getting in touch with me! I will respond as soon
+                as I can.
+              </div>
+            </>
           ) : null}
           {validationMessage ? (
             <div class="text-danger mt-2">* All fields required</div>

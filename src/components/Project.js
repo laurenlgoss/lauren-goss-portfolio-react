@@ -35,7 +35,7 @@ function Project({
               className={`${lightIcons ? 'light' : ''}`}
               rel="noreferrer"
             >
-              <FontAwesomeIcon icon={['fas', 'external-link-alt']} size="3x" />
+              <FontAwesomeIcon icon={['fas', 'desktop']} size="3x" />
             </a>
           ) : (
             <></>
