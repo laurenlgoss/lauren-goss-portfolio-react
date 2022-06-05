@@ -1,6 +1,7 @@
 import React from 'react';
 import Skills from './Skills';
 import SkillsCarousel from './SkillsCarousel';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import javaScriptImg from '../images/skills-logos/javascript.png';
 import htmlImg from '../images/skills-logos/html-5.png';
@@ -282,11 +283,68 @@ const carouselSkillsArray = [
 function AboutMe() {
   return (
     <div id="about-me" className="between-padding">
-      <div className="row" style={{ position: 'relative' }}>
-        <h1 className="section-title" id="about-me-title">
+      <div className="row text-center about-me-row">
+        <h1 className="section-title text-start" id="about-me-title">
           about
         </h1>
-        <div className="col-md-10 offset-md-1 about-me-excerpt">
+
+        <div className="col-md-4 border-right about-me-section-col">
+          <i class="bi bi-hourglass" style={{ fontSize: 75 }}></i>
+          <h3 className="about-me-section-title">BACKGROUND</h3>
+          <div className="about-me-section-text">
+            I have a strong background in veterinary medicine. This allows me to
+            bring a <strong>unique perspective</strong> and skillset to the
+            world of web development. In my years of working in the veterinary
+            field, I have honed my <strong>collaboration</strong> and{' '}
+            <strong>teamwork</strong> skills. I pride myself on my ability to
+            excel in team settings. During the Summer of 2020 I began teaching
+            myself <strong>Swift</strong> and decided I wanted a career change.
+            I soon after enrolled in a Coding Bootcamp and began pursuing my
+            passion for <strong>logic</strong>.
+          </div>
+        </div>
+
+        <div className="col-md-4 border-right about-me-section-col">
+          <i class="bi bi-mortarboard" style={{ fontSize: 75 }}></i>
+          <h3 className="about-me-section-title">EDUCATION</h3>
+          <div className="about-me-section-text">
+            I graduated <strong>Summa Cum Laude</strong> {'(3.89 GPA)'} with a{' '}
+            <strong>Bachelor of Science</strong> in Animal Science{' '}
+            {'(Veterinary Bioscience Concentration)'} and a Zoology Minor from
+            North Carolina State University. Most recently I received a{' '}
+            <a
+              className="certificate"
+              target={'_blank'}
+              href="https://www.credly.com/badges/b0c414e7-ba48-40dc-b1ae-7b51729bd7eb"
+            >
+              certificate
+            </a>{' '}
+            in <strong>Full-Stack Web Development</strong> from the UNC Coding
+            Bootcamp for Full-Stack Web Development. I am currently continuing
+            my education through online <strong>web development courses</strong>{' '}
+            offered by the University of North Carolina at Chapel Hill.
+          </div>
+        </div>
+
+        <div className="col-md-4 about-me-section-col">
+          <i class="bi bi-clock-history" style={{ fontSize: 75 }}></i>
+          <h3 className="about-me-section-title">EXPERIENCE</h3>
+          <div className="about-me-section-text">
+            I began learning web development over a year ago. Since then, I have
+            held a position as a <strong>Web Development Intern</strong> at
+            Century Furniture where I was instrumental in building a new{' '}
+            <strong>.NET</strong> website from the ground up. Currently, I hold
+            a <strong>Data Developer</strong> position at Century Furniture. I
+            have gained experience in{' '}
+            <strong>
+              Visual Basic, database structuring {'(SQL)'}, Electronic Data
+              Interchange {'(EDI)'}, SAP
+            </strong>{' '}
+            and more. I also continue to further my knowledge by working on
+            personal projects.
+          </div>
+        </div>
+        {/* <div className="col-md-10 offset-md-1 about-me-excerpt">
           <p>
             I am presently residing in Hickory, NC. I graduated Summa Cum Laude
             from North Carolina State University in May 2020, obtaining my
@@ -297,9 +355,9 @@ function AboutMe() {
             Boot Camp, from which I recently graduated. I have a particular
             enthusiasm for writing frontend and backend logic.
           </p>
-        </div>
+        </div> */}
       </div>
-      <div className="row justify-content-between">
+      {/* <div className="row justify-content-between">
         {skillsArray.map((skillsObject) => {
           return (
             <div className="col-md-4">
@@ -310,8 +368,11 @@ function AboutMe() {
             </div>
           );
         })}
-      </div>
-      <SkillsCarousel skills={carouselSkillsArray} />
+      </div> */}
+      <SkillsCarousel
+        skills={carouselSkillsArray}
+        style={{ marginTop: '5em' }}
+      />
     </div>
   );
 }

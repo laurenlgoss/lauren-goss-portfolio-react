@@ -3,7 +3,7 @@
 :root {
   --left-header: #ffbf00;
   --right-header: #00abff;
-  --vertical-margin: 4em;
+  --vertical-margin: 5em;
   --alt-font-color: #1d1d1d;
 }
 
@@ -91,7 +91,7 @@ body {
   color: var(--left-header); /* Override typewriter-effect color */
 }
 
-.headshot-col {
+.border-right {
   border-right: 2px dotted rgb(255, 255, 255, 0.5);
 }
 
@@ -113,7 +113,7 @@ body {
 .down-arrow {
   position: absolute;
   bottom: 10px;
-  left: 47%;
+  left: 47.5%;
   color: rgba(255, 255, 255, 0.7);
 }
 
@@ -130,14 +130,41 @@ body {
 
 /* About Me */
 
-#about-me-title {
-  left: 10px;
-  bottom: -91px;
-}
-
-.about-me-excerpt {
+.about-me-row {
+  position: relative;
   margin-bottom: var(--vertical-margin);
 }
+
+#about-me-title {
+  left: 10px;
+  top: 10px;
+}
+
+.about-me-section-col {
+  padding: 0 2em;
+}
+
+.about-me-section-title {
+  font-weight: 200;
+  margin-bottom: 1.5em;
+}
+
+.about-me-section-text {
+  line-height: 30px;
+}
+
+.certificate {
+  color: var(--right-header);
+  text-decoration: none;
+}
+
+.certificate:hover {
+  color: var(--left-header);
+}
+
+/* .about-me-excerpt {
+  margin-bottom: var(--vertical-margin);
+} */
 
 .skills-card-header {
   position: relative;
@@ -438,7 +465,7 @@ body {
     padding: 0 2em;
   }
 
-  .headshot-col {
+  .border-right {
     border-right: 0px solid transparent;
   }
 

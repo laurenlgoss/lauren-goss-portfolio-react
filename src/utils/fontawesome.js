@@ -6,8 +6,6 @@ import {
   faDatabase,
   faUser,
   faTools,
-  faAngleDown,
-  faArrowDown
 } from '@fortawesome/free-solid-svg-icons';
 
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
@@ -19,7 +17,5 @@ library.add(
   faTools,
   faUser,
   faGithub,
-  faLinkedin,
-  faAngleDown,
-  faArrowDown
+  faLinkedin
 );

@@ -14,7 +14,7 @@ function SkillsCarousel({ skills }) {
               <div className="col">
                 <div className="text-center" key={i}>
                   <img src={skill.img} alt={`${skill.name} logo`} />
-                  <div className="mt-3 alt-font">{skill.name}</div>
+                  <div className="mt-3">{skill.name}</div>
                 </div>
               </div>
             );

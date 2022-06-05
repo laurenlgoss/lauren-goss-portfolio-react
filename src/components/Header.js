@@ -1,7 +1,6 @@
 import React from 'react';
 import Typewriter from 'typewriter-effect';
 import FadeIn from 'react-fade-in';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import headshotImg from '../images/Headshot.jpg';
 
@@ -9,7 +8,7 @@ function Header() {
   return (
     <div className="header-container">
       <div className="row align-content-center">
-        <div className="col-lg-4 offset-lg-1 headshot-col text-center text-lg-end mb-4 mb-lg-0">
+        <div className="col-lg-4 offset-lg-1 border-right text-center text-lg-end mb-4 mb-lg-0">
           <img
             src={headshotImg}
             className="headshot img-fluid"
@@ -19,7 +18,6 @@ function Header() {
         <div className="col-lg-6 intro my-lg-auto mb-5 text-center text-lg-start">
           <h3 className="alt-font hello">
             <Typewriter
-            delay={1}
               onInit={(typewriter) => {
                 typewriter.typeString('Hello World! My name is').start();
               }}
@@ -42,7 +40,7 @@ function Header() {
           <div className="text-center down-arrow">
             About Me
             <br />
-            <FontAwesomeIcon icon={['fas', 'arrow-down']} size="3x" />
+            <i class="bi bi-arrow-down" style={{ fontSize: 50 }}></i>
           </div>
         </a>
       </FadeIn>
