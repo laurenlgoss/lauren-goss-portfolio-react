@@ -19,6 +19,7 @@ function Header() {
         <div className="col-lg-6 intro my-lg-auto mb-5 text-center text-lg-start">
           <h3 className="alt-font hello">
             <Typewriter
+            delay={1}
               onInit={(typewriter) => {
                 typewriter.typeString('Hello World! My name is').start();
               }}
@@ -30,19 +31,21 @@ function Header() {
           </FadeIn>
           <FadeIn delay={5000}>
             <div>
-              Graduated from the UNC Coding Boot Camp for Full-Stack Web
+              Graduate of the UNC Coding Boot Camp for Full-Stack Web
               Development.
             </div>
           </FadeIn>
         </div>
       </div>
-      <a href="#about-me">
-        <FontAwesomeIcon
-          icon={['fas', 'angle-down']}
-          size="5x"
-          className="down-arrow"
-        />
-      </a>
+      <FadeIn delay={6000}>
+        <a href="#about-me">
+          <div className="text-center down-arrow">
+            About Me
+            <br />
+            <FontAwesomeIcon icon={['fas', 'arrow-down']} size="3x" />
+          </div>
+        </a>
+      </FadeIn>
     </div>
   );
 }

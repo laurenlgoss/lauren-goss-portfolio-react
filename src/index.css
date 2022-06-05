@@ -37,6 +37,21 @@ body {
   background-color: rgb(0, 0, 0, 0.5);
 }
 
+.l {
+  color: var(--right-header);
+}
+
+.g {
+  color: var(--left-header);
+}
+
+.logo {
+  margin: 0;
+  font-weight: bold;
+  display: inline;
+  margin-right: 0.5em;
+}
+
 .nav-container a {
   color: white;
   font-family: 'Inconsolata';
@@ -98,7 +113,7 @@ body {
 .down-arrow {
   position: absolute;
   bottom: 10px;
-  left: 48%;
+  left: 47%;
   color: rgba(255, 255, 255, 0.7);
 }
 
