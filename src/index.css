@@ -162,63 +162,6 @@ body {
   color: var(--left-header);
 }
 
-/* .about-me-excerpt {
-  margin-bottom: var(--vertical-margin);
-} */
-
-.skills-card-header {
-  position: relative;
-}
-
-.skills-card {
-  color: black;
-  padding-top: 3em;
-  height: fit-content;
-  margin: 0em 1.5em var(--vertical-margin) 1.5em;
-}
-
-.skills-card h5 {
-  text-align: center;
-  font-weight: bold;
-}
-
-.skills-icon {
-  color: white;
-  background-color: var(--right-header);
-  padding: 1.5em;
-  border-radius: 50%;
-  width: 83px;
-  position: absolute;
-  bottom: 39px;
-}
-
-.frontend-icon {
-  left: 20px;
-  top: 20px;
-}
-
-.backend-icon {
-  left: 23px;
-  top: 20px;
-}
-
-.backend-push {
-  right: -7px;
-}
-
-.other-push {
-  right: -18px;
-}
-
-.other-icon {
-  top: 20px;
-  left: 21px;
-}
-
-.custom-list span {
-  color: var(--right-header);
-}
-
 /* Skills Badges */
 
 .badge-pill {

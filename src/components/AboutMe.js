@@ -1,7 +1,5 @@
 import React from 'react';
-import Skills from './Skills';
 import SkillsCarousel from './SkillsCarousel';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import javaScriptImg from '../images/skills-logos/javascript.png';
 import htmlImg from '../images/skills-logos/html-5.png';
@@ -344,31 +342,7 @@ function AboutMe() {
             personal projects.
           </div>
         </div>
-        {/* <div className="col-md-10 offset-md-1 about-me-excerpt">
-          <p>
-            I am presently residing in Hickory, NC. I graduated Summa Cum Laude
-            from North Carolina State University in May 2020, obtaining my
-            Bachelor of Science in Animal Science. After working in the
-            veterinary field following graduation, I was ready for a career
-            change and began teaching myself Swift in Summer of 2020. Shortly
-            after, I discovered a passion for logic and enrolled in UNC's Coding
-            Boot Camp, from which I recently graduated. I have a particular
-            enthusiasm for writing frontend and backend logic.
-          </p>
-        </div> */}
       </div>
-      {/* <div className="row justify-content-between">
-        {skillsArray.map((skillsObject) => {
-          return (
-            <div className="col-md-4">
-              <Skills
-                category={skillsObject.category}
-                skills={skillsObject.skills}
-              />
-            </div>
-          );
-        })}
-      </div> */}
       <SkillsCarousel
         skills={carouselSkillsArray}
         style={{ marginTop: '5em' }}
