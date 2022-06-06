@@ -39,6 +39,8 @@ function Project({
         <div class="card modal-body text-center">
           <div className="project-img-container">
             <img src={imgSrc} alt={title} className="img-fluid mx-auto mb-4" />
+
+            {/* Links */}
             <div className="project-icons-container">
               <a
                 href={githubRepo}
@@ -62,10 +64,14 @@ function Project({
               )}
             </div>
           </div>
+
           <h1>
             <strong>{title}</strong>
           </h1>
-          <div className="mb-3 alt-font">{description}</div>
+
+          <div className="mb-3">{description}</div>
+
+          {/* Collaborative vs. Solo */}
           <p>
             <span className={`badge badge-pill default-pill`}>
               {numOfGroupMembers > 1 ? 'Collaborative' : 'Solo'}
@@ -81,6 +87,8 @@ function Project({
               );
             })}
           </p>
+
+          {/* Languages */}
           <div>
             {languages.map((language) => {
               return (

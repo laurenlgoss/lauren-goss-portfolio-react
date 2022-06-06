@@ -280,74 +280,81 @@ const carouselSkillsArray = [
 
 function AboutMe() {
   return (
-    <div id="about-me" className="between-padding">
-      <div className="row text-center about-me-row">
-        {/* <h1 className="section-title">
-          about me
-        </h1> */}
-
-        <div className="col-lg-4 border-right about-me-section-col">
-          <i class="bi bi-hourglass" style={{ fontSize: 75 }}></i>
-          <h3 className="about-me-section-title">BACKGROUND</h3>
-          <div className="about-me-section-text">
-            I have a strong background in veterinary medicine. This allows me to
-            bring a <strong>unique perspective</strong> and skillset to the
-            world of web development. In my years of working in the veterinary
-            field, I have honed my <strong>collaboration</strong> and{' '}
-            <strong>teamwork</strong> skills. I pride myself on my ability to
-            excel in team settings. During the Summer of 2020 I began teaching
-            myself <strong>Swift</strong> and decided I wanted a career change.
-            I soon after enrolled in a Coding Bootcamp and began pursuing my
-            passion for <strong>logic</strong>.
+    <>
+      <div id="about-me" className="between-padding">
+        {/* Background */}
+        <div className="row text-center about-me-row">
+          <div className="col-lg-4 border-right about-me-section-col">
+            <i class="bi bi-hourglass" style={{ fontSize: 75 }}></i>
+            <h3 className="about-me-section-title">BACKGROUND</h3>
+            <div className="about-me-section-text">
+              I have a strong background in veterinary medicine. This allows me
+              to bring a <strong>unique perspective</strong> and skillset to the
+              world of web development. In my years of working in the veterinary
+              field, I have honed my <strong>collaboration</strong> and{' '}
+              <strong>teamwork</strong> skills. I pride myself on my ability to
+              excel in team settings. During the Summer of 2020 I began teaching
+              myself <strong>Swift</strong> and decided I wanted a career
+              change. I soon after enrolled in a Coding Bootcamp and began
+              pursuing my passion for <strong>logic</strong>.
+            </div>
           </div>
-        </div>
 
-        <div className="col-lg-4 border-right about-me-section-col">
-          <i class="bi bi-mortarboard" style={{ fontSize: 75 }}></i>
-          <h3 className="about-me-section-title">EDUCATION</h3>
-          <div className="about-me-section-text">
-            I graduated <strong>Summa Cum Laude</strong> {'(3.89 GPA)'} with a{' '}
-            <strong>Bachelor of Science</strong> in Animal Science{' '}
-            {'(Veterinary Bioscience Concentration)'} and a Zoology Minor from
-            North Carolina State University. Most recently I received a{' '}
-            <a
-              className="certificate"
-              target={'_blank'}
-              href="https://www.credly.com/badges/b0c414e7-ba48-40dc-b1ae-7b51729bd7eb"
-            >
-              certificate
-            </a>{' '}
-            in <strong>Full-Stack Web Development</strong> from the UNC Coding
-            Bootcamp for Full-Stack Web Development. I am currently continuing
-            my education through online <strong>web development courses</strong>{' '}
-            offered by the University of North Carolina at Chapel Hill.
+          {/* Education */}
+          <div className="col-lg-4 border-right about-me-section-col">
+            <i class="bi bi-mortarboard" style={{ fontSize: 75 }}></i>
+            <h3 className="about-me-section-title">EDUCATION</h3>
+            <div className="about-me-section-text">
+              I graduated <strong>Summa Cum Laude</strong> {'(3.89 GPA)'} with a{' '}
+              <strong>Bachelor of Science</strong> in Animal Science{' '}
+              {'(Veterinary Bioscience Concentration)'} and a Zoology Minor from
+              North Carolina State University. Most recently I received a{' '}
+              <a
+                className="certificate"
+                target={'_blank'}
+                href="https://www.credly.com/badges/b0c414e7-ba48-40dc-b1ae-7b51729bd7eb"
+              >
+                certificate
+              </a>{' '}
+              in <strong>Full-Stack Web Development</strong> from the UNC Coding
+              Bootcamp for Full-Stack Web Development. I am currently continuing
+              my education through online{' '}
+              <strong>web development courses</strong> offered by the University
+              of North Carolina at Chapel Hill.
+            </div>
           </div>
-        </div>
 
-        <div className="col-lg-4 about-me-section-col">
-          <i class="bi bi-clock-history" style={{ fontSize: 75 }}></i>
-          <h3 className="about-me-section-title">EXPERIENCE</h3>
-          <div className="about-me-section-text">
-            I began learning web development over a year ago. Since then, I have
-            held a position as a <strong>Web Development Intern</strong> at
-            Century Furniture where I was instrumental in building a new{' '}
-            <strong>.NET</strong> website from the ground up. Currently, I hold
-            a <strong>Data Developer</strong> position at Century Furniture. I
-            have gained experience in{' '}
-            <strong>
-              Visual Basic, database structuring {'(SQL)'}, Electronic Data
-              Interchange {'(EDI)'}, SAP
-            </strong>{' '}
-            and more. I also continue to further my knowledge by working on
-            personal projects.
+          {/* Experience */}
+          <div className="col-lg-4 about-me-section-col">
+            <i class="bi bi-clock-history" style={{ fontSize: 75 }}></i>
+            <h3 className="about-me-section-title">EXPERIENCE</h3>
+            <div className="about-me-section-text">
+              I began learning web development over a year ago. Since then, I
+              have held a position as a <strong>Web Development Intern</strong>{' '}
+              at Century Furniture where I was instrumental in building a new{' '}
+              <strong>.NET</strong> website from the ground up. Currently, I
+              hold a <strong>Data Developer</strong> position at Century
+              Furniture. I have gained experience in{' '}
+              <strong>
+                Visual Basic, database structuring {'(SQL)'}, Electronic Data
+                Interchange {'(EDI)'}, SAP
+              </strong>{' '}
+              and more. I also continue to further my knowledge by working on
+              personal projects.
+            </div>
           </div>
         </div>
       </div>
-      <SkillsCarousel
-        skills={carouselSkillsArray}
-        style={{ marginTop: 'var(--vertical-margin)' }}
-      />
-    </div>
+
+      {/* Skills */}
+      <div className="between-padding alt-background">
+        <div className="section-title-wrapper">
+          <div className="section-title">skills & technologies</div>
+          <div className="alt-font text-center section-description">{`< Languages, concepts, and software I am proficient in. >`}</div>
+        </div>
+        <SkillsCarousel skills={carouselSkillsArray} />
+      </div>
+    </>
   );
 }
 

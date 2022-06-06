@@ -15,7 +15,7 @@ import codeQuizImg from '../images/projects/code-quiz.png';
 
 const featuredProject = new TopProject(
   'https://artin-around.herokuapp.com/',
-  '// collaborative project utilizing the MERN stack. allows the user to explore street art by location and add their own images to their public portfolio.',
+  'Collaborative project utilizing the MERN stack. allows the user to explore street art by location and add their own images to their public portfolio.',
   'https://github.com/laurenlgoss/Public-Art-Finder',
   artinAroundImg,
   [
@@ -47,7 +47,7 @@ projectsArray.push(
   new SmallProject(
     'right',
     'https://artin-around.herokuapp.com/',
-    '// collaborative project utilizing the MERN stack. allows the user to explore street art by location and add their own images to their public portfolio.',
+    'Collaborative project utilizing the MERN stack. allows the user to explore street art by location and add their own images to their public portfolio.',
     'https://github.com/laurenlgoss/Public-Art-Finder',
     artinAroundImg,
     [
@@ -78,7 +78,7 @@ projectsArray.push(
   new SmallProject(
     'right',
     'https://immense-eyrie-11789.herokuapp.com/',
-    '// full-stack application that allows the user to keep track of all the jobs they are applying for in one convenient location.',
+    'Full-stack application that allows the user to keep track of all the jobs they are applying for in one convenient location.',
     'https://github.com/laurenlgoss/job-application-tracker',
     appliTrakImg,
     [
@@ -105,7 +105,7 @@ projectsArray.push(
   new SmallProject(
     'left',
     'https://pokev-tracker.herokuapp.com/',
-    "// MERN stack application that allows the user to easily track their Pokémons' Effort Values while training.",
+    "MERN stack application that allows the user to easily track their Pokémons' Effort Values while training.",
     'https://github.com/laurenlgoss/pokemon-tracker',
     pokevImg,
     [
@@ -136,7 +136,7 @@ projectsArray.push(
   new SmallProject(
     'left',
     'https://pamtheham.github.io/Sky-Gazer/',
-    "// dashboard that uses the user's location and chosen satellite to determine the dates/times of that satellite's passovers for the next 7 days and their predicted visiblity.",
+    "Dashboard that uses the user's location and chosen satellite to determine the dates/times of that satellite's passovers for the next 7 days and their predicted visiblity.",
     'https://github.com/laurenlgoss/Sky-Gazer',
     skyGazerImg,
     ['API', 'Bulma', 'CSS', 'Frontend', 'HTML', 'JavaScript', 'Local Storage'],
@@ -151,7 +151,7 @@ projectsArray.push(
   new SmallProject(
     'left',
     '',
-    '// backend JavaScript application that allows the user to interact with an employee database through the command line.',
+    'Backend JavaScript application that allows the user to interact with an employee database through the command line.',
     'https://github.com/laurenlgoss/employee-tracker',
     employeeTrackerImg,
     ['Backend', 'Inquirer.js', 'JavaScript', 'MySQL', 'Node.js'],
@@ -166,7 +166,7 @@ projectsArray.push(
   new SmallProject(
     'right',
     'https://laurenlgoss.github.io/weather-dashboard/',
-    '// weather dashboard that displays the current weather and 5-day forecast for whichever city the user inputs.',
+    'Weather dashboard that displays the current weather and 5-day forecast for whichever city the user inputs.',
     'https://github.com/laurenlgoss/weather-dashboard',
     weatherDashboardImg,
     [
@@ -203,7 +203,12 @@ projectsArray.push(
 function ProjectsContainer() {
   return (
     <div id="projects" className="between-padding">
-      <h1 className="section-title">projects</h1>
+      {/* <h1 className="section-title">projects</h1> */}
+
+      <div className="section-title-wrapper">
+          <div className="section-title">projects</div>
+          <div className="alt-font text-center section-description">{`< A mixture of solo and collaborative projects I have completed. >`}</div>
+        </div>
 
       <ImageList variant={'masonry'} cols={3} gap={20}>
         {projectsArray.map((project) => {

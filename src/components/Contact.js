@@ -51,11 +51,12 @@ function Contact() {
   }
 
   return (
-    <div id="contact">
-    <h1 className="section-title">
-      contact me
-    </h1>
-      <div className="row">
+    <div id="contact" className='between-padding alt-background'>
+        <div className="section-title-wrapper">
+          <div className="section-title">contact me</div>
+          <div className="alt-font text-center section-description">{`< Get in touch with me. >`}</div>
+        </div>
+      <div className="row mb-5">
         <div className="col text-center">
           <h5 className="alt-font">
             {`contactInfo = { email: laurenlgoss98@gmail.com, phone: 828-409-3012, resume: `}

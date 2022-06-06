@@ -18,12 +18,37 @@ body {
   font-family: 'Inconsolata';
 }
 
+.alt-background {
+  background-color: #121212;
+}
+
 .card {
   border-radius: 0px;
 }
 
 .between-padding {
-  padding-top: var(--vertical-margin);
+  padding: 3em 0;
+}
+
+.section-title {
+  background-image: linear-gradient(60deg, #272727, var(--alt-font-color));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: bold;
+  font-size: 75px;
+  z-index: -1;
+  text-align: center;
+  font-weight: 800;
+  /* margin-bottom: 0.5em; */
+}
+
+.section-title-wrapper {
+  margin-bottom: 3em;
+}
+
+.section-description {
+  color: #aeaeae;
 }
 
 /* Navbar */
@@ -118,21 +143,6 @@ body {
   color: rgba(255, 255, 255, 0.7);
 }
 
-.section-title {
-  /* position: absolute; */
-  background-image: linear-gradient(60deg, #272727, var(--alt-font-color));
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  font-weight: bold;
-  font-size: 75px;
-  z-index: -1;
-  text-align: center;
-  font-weight: 800;
-  /* letter-spacing: 25px; */
-  margin-bottom: 0.5em;
-}
-
 /* About Me */
 
 .about-me-row {
@@ -146,7 +156,6 @@ body {
 
 .about-me-section-col {
   padding: 0 2em;
-  margin-bottom: var(--vertical-margin);
 }
 
 .about-me-section-title {
@@ -395,10 +404,6 @@ body {
 
 /* Contact */
 
-#contact .col {
-  margin-bottom: var(--vertical-margin);
-}
-
 #contact-title {
   right: 1%;
   bottom: -89px;
@@ -424,14 +429,14 @@ body {
 
 .send-message {
   border-radius: 0;
-  background-color: transparent;
+  background-color: var(--right-header);
   padding: 0.5em 1em;
-  border: 2px solid white;
+  border: 0px solid transparent;
   color: white;
 }
 
 .send-message:hover {
-  border-color: var(--left-header);
+  background-color: var(--left-header);
   color: white;
 }
 
