@@ -32,46 +32,6 @@ import apolloImg from '../images/skills-logos/apollo.png';
 import restfulAPIImg from '../images/skills-logos/restful-api.png';
 import npmImg from '../images/skills-logos/npm.png';
 
-// --- Skills Cards ---
-
-const frontendSkills = {
-  category: 'frontend',
-  skills: [
-    'JavaScript',
-    'ReactJS',
-    'Node.js',
-    'Bootstrap/Material UI',
-    'jQuery',
-    'HTML/CSS',
-  ],
-};
-
-const backendSkills = {
-  category: 'backend',
-  skills: [
-    'Express.js',
-    'MySQL/Sequelize',
-    'NoSQL/MongoDB/Mongoose',
-    '.NET/Visual Basic',
-    'Handlebars.js',
-    'GraphQL/Apollo Client',
-  ],
-};
-
-const otherSkills = {
-  category: 'other',
-  skills: [
-    'Git Source Control',
-    'Visual Studio Code',
-    'Unit Testing',
-    'Model View Controller',
-    'Wireframing/Figma',
-    'Bitbucket/Sourcetree',
-  ],
-};
-
-const skillsArray = [frontendSkills, backendSkills, otherSkills];
-
 // --- Skills Carousel ---
 
 const javaScript = {

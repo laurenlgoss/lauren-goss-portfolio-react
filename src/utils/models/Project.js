@@ -1,4 +1,4 @@
-class TopProject {
+class Project {
   constructor(
     deployedApp = '',
     description = '',
@@ -22,4 +22,4 @@ class TopProject {
   }
 }
 
-export default TopProject;
+export default Project;

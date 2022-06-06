@@ -1,9 +1,8 @@
 import React from 'react';
-import FeaturedProject from './FeaturedProject';
-import Project from './Project';
+import ProjectTile from './ProjectTile';
 import ImageList from '@mui/material/ImageList';
 
-import { TopProject, SmallProject } from '../utils/models';
+import { Project } from '../utils/models';
 
 import artinAroundImg from '../images/projects/artin-around.png';
 import appliTrakImg from '../images/projects/applitrak-dashboard.png';
@@ -11,41 +10,12 @@ import pokevImg from '../images/projects/pokev-tracker.png';
 import skyGazerImg from '../images/projects/sky-gazer.png';
 import employeeTrackerImg from '../images/projects/employee-tracker.gif';
 import weatherDashboardImg from '../images/projects/weather-dashboard.png';
-import codeQuizImg from '../images/projects/code-quiz.png';
-
-const featuredProject = new TopProject(
-  'https://artin-around.herokuapp.com/',
-  'Collaborative project utilizing the MERN stack. allows the user to explore street art by location and add their own images to their public portfolio.',
-  'https://github.com/laurenlgoss/Public-Art-Finder',
-  artinAroundImg,
-  [
-    'Apollo',
-    'Cloudinary',
-    'CSS',
-    'Express.js',
-    'GraphQL',
-    'HTML',
-    'JavaScript',
-    'JWT',
-    'Local Storage',
-    'Node.js',
-    'Material UI',
-    'MERN Stack',
-    'MongoDB',
-    'Mongoose',
-    'ReactJS',
-  ],
-  false,
-  'test',
-  4,
-  "Artin' Around"
-);
+// import codeQuizImg from '../images/projects/code-quiz.png';
 
 const projectsArray = [];
 
 projectsArray.push(
-  new SmallProject(
-    'right',
+  new Project(
     'https://artin-around.herokuapp.com/',
     'Collaborative project utilizing the MERN stack. allows the user to explore street art by location and add their own images to their public portfolio.',
     'https://github.com/laurenlgoss/Public-Art-Finder',
@@ -75,8 +45,7 @@ projectsArray.push(
 );
 
 projectsArray.push(
-  new SmallProject(
-    'right',
+  new Project(
     'https://immense-eyrie-11789.herokuapp.com/',
     'Full-stack application that allows the user to keep track of all the jobs they are applying for in one convenient location.',
     'https://github.com/laurenlgoss/job-application-tracker',
@@ -102,8 +71,7 @@ projectsArray.push(
 );
 
 projectsArray.push(
-  new SmallProject(
-    'left',
+  new Project(
     'https://pokev-tracker.herokuapp.com/',
     "MERN stack application that allows the user to easily track their Pokémons' Effort Values while training.",
     'https://github.com/laurenlgoss/pokemon-tracker',
@@ -133,8 +101,7 @@ projectsArray.push(
 );
 
 projectsArray.push(
-  new SmallProject(
-    'left',
+  new Project(
     'https://pamtheham.github.io/Sky-Gazer/',
     "Dashboard that uses the user's location and chosen satellite to determine the dates/times of that satellite's passovers for the next 7 days and their predicted visiblity.",
     'https://github.com/laurenlgoss/Sky-Gazer',
@@ -148,8 +115,7 @@ projectsArray.push(
 );
 
 projectsArray.push(
-  new SmallProject(
-    'left',
+  new Project(
     '',
     'Backend JavaScript application that allows the user to interact with an employee database through the command line.',
     'https://github.com/laurenlgoss/employee-tracker',
@@ -163,8 +129,7 @@ projectsArray.push(
 );
 
 projectsArray.push(
-  new SmallProject(
-    'right',
+  new Project(
     'https://laurenlgoss.github.io/weather-dashboard/',
     'Weather dashboard that displays the current weather and 5-day forecast for whichever city the user inputs.',
     'https://github.com/laurenlgoss/weather-dashboard',
@@ -186,8 +151,7 @@ projectsArray.push(
 );
 
 // projectsArray.push(
-//   new SmallProject(
-//     'left',
+//   new Project(
 //     'https://laurenlgoss.github.io/code-quiz/',
 //     '// multiple choice quiz that tests the user on knowledge of HTML, CSS, and JavaScript concepts.',
 //     'https://github.com/laurenlgoss/code-quiz',
@@ -203,17 +167,15 @@ projectsArray.push(
 function ProjectsContainer() {
   return (
     <div id="projects" className="between-padding">
-      {/* <h1 className="section-title">projects</h1> */}
-
       <div className="section-title-wrapper">
-          <div className="section-title">projects</div>
-          <div className="alt-font text-center section-description">{`< A mixture of solo and collaborative projects I have completed. >`}</div>
-        </div>
+        <div className="section-title">projects</div>
+        <div className="alt-font text-center section-description">{`< A mixture of solo and collaborative projects I have completed. >`}</div>
+      </div>
 
       <ImageList variant={'masonry'} cols={3} gap={20}>
         {projectsArray.map((project) => {
           return (
-            <Project
+            <ProjectTile
               columnSide={project.columnSide}
               deployedApp={project.deployedApp}
               description={project.description}
@@ -229,74 +191,6 @@ function ProjectsContainer() {
         })}
       </ImageList>
     </div>
-
-    // <div id="projects" className="between-padding">
-    //   <div className="row justify-content-between featured-project">
-    //     <h1 className="section-title" id="projects-title">
-    //       projects
-    //     </h1>
-    //     <FeaturedProject
-    //       deployedApp={featuredProject.deployedApp}
-    //       description={featuredProject.description}
-    //       githubRepo={featuredProject.githubRepo}
-    //       imgSrc={featuredProject.imgSrc}
-    //       languages={featuredProject.languages}
-    //       lightIcons={featuredProject.lightIcons}
-    //       myRole={featuredProject.myRole}
-    //       numOfGroupMembers={featuredProject.numOfGroupMembers}
-    //       title={featuredProject.title}
-    //     />
-    //   </div>
-
-    //   <div className="row justify-content-around projects">
-    //     <div className="col-md-6">
-    //       {projectsArray
-    //         .filter((project) => {
-    //           return project.columnSide === 'left';
-    //         })
-    //         .map((project) => {
-    //           return (
-    //             <Project
-    //               borderColor={project.borderColor}
-    //               columnSide={project.columnSide}
-    //               deployedApp={project.deployedApp}
-    //               description={project.description}
-    //               githubRepo={project.githubRepo}
-    //               imgSrc={project.imgSrc}
-    //               languages={project.languages}
-    //               lightIcons={project.lightIcons}
-    //               myRole={project.myRole}
-    //               numOfGroupMembers={project.numOfGroupMembers}
-    //               title={project.title}
-    //             />
-    //           );
-    //         })}
-    //     </div>
-    //     <div className="col-md-6">
-    //       {projectsArray
-    //         .filter((project) => {
-    //           return project.columnSide === 'right';
-    //         })
-    //         .map((project) => {
-    //           return (
-    //             <Project
-    //               borderColor={project.borderColor}
-    //               columnSide={project.columnSide}
-    //               deployedApp={project.deployedApp}
-    //               description={project.description}
-    //               githubRepo={project.githubRepo}
-    //               imgSrc={project.imgSrc}
-    //               languages={project.languages}
-    //               lightIcons={project.lightIcons}
-    //               myRole={project.myRole}
-    //               numOfGroupMembers={project.numOfGroupMembers}
-    //               title={project.title}
-    //             />
-    //           );
-    //         })}
-    //     </div>
-    //   </div>
-    // </div>
   );
 }
 

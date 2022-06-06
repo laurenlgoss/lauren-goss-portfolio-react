@@ -40,7 +40,6 @@ body {
   z-index: -1;
   text-align: center;
   font-weight: 800;
-  /* margin-bottom: 0.5em; */
 }
 
 .section-title-wrapper {
@@ -148,11 +147,6 @@ body {
 .about-me-row {
   position: relative;
 }
-
-/* #about-me-title {
-  left: 10px;
-  top: 10px;
-} */
 
 .about-me-section-col {
   padding: 0 2em;
@@ -345,18 +339,11 @@ body {
   margin: 0em 0em 0em 1.5em;
 }
 
-/* .project-title {
-  color: white;
-  font-weight: bold;
-  font-size: 50px;
-} */
-
 .featured-project {
   position: relative;
   box-sizing: content-box;
   border-width: 5px;
   border-style: solid;
-  /* border-image: linear-gradient(to right, #f13232, #a053df); */
   border-color: lightgray;
   border-image-slice: 1;
   padding: 1.5em;

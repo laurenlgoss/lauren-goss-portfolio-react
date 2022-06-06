@@ -1,4 +1,3 @@
-import TopProject from './topProject';
-import SmallProject from './smallProject';
+import Project from './Project';
 
-export { TopProject, SmallProject };
+export { Project };
