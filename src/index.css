@@ -32,7 +32,7 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 2;
+  z-index: 3;
   padding: 0.5em;
   background-color: rgb(0, 0, 0, 0.5);
 }
@@ -113,35 +113,40 @@ body {
 .down-arrow {
   position: absolute;
   bottom: 10px;
-  left: 47.5%;
+  left: 50%;
+  transform: translate(-50%);
   color: rgba(255, 255, 255, 0.7);
 }
 
 .section-title {
-  position: absolute;
+  /* position: absolute; */
   background-image: linear-gradient(60deg, #272727, var(--alt-font-color));
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
   font-weight: bold;
-  font-size: 200px;
+  font-size: 75px;
   z-index: -1;
+  text-align: center;
+  font-weight: 800;
+  /* letter-spacing: 25px; */
+  margin-bottom: 0.5em;
 }
 
 /* About Me */
 
 .about-me-row {
   position: relative;
-  margin-bottom: var(--vertical-margin);
 }
 
-#about-me-title {
+/* #about-me-title {
   left: 10px;
   top: 10px;
-}
+} */
 
 .about-me-section-col {
   padding: 0 2em;
+  margin-bottom: var(--vertical-margin);
 }
 
 .about-me-section-title {
@@ -151,11 +156,15 @@ body {
 
 .about-me-section-text {
   line-height: 30px;
+  color: #c4c4c4;
+}
+
+.about-me-section-text strong {
+  color: white;
 }
 
 .certificate {
-  color: var(--right-header);
-  text-decoration: none;
+  color: white;
 }
 
 .certificate:hover {
@@ -262,6 +271,47 @@ body {
 
 /* Projects */
 
+#projects {
+  margin-bottom: var(--vertical-margin);
+  margin: 0 4em;
+}
+
+.project-img-wrapper {
+  position: relative;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.img-overlay {
+  position: absolute;
+  bottom: 0;
+  padding: 0.5em 1em;
+  display: flex;
+  width: 100%;
+  background-color: rgb(0, 0, 0, 0.5);
+}
+
+.project-title {
+  color: white;
+  font-weight: bold;
+  font-size: calc(10px + 1vw);
+}
+
+.modal-body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid white;
+  box-shadow: 24px;
+  padding: 2em;
+  background-color: black;
+  max-width: 50%;
+  min-width: 200px;
+  overflow: auto;
+  max-height: 100%;
+}
+
 #projects-title {
   left: -41px;
   bottom: -117px;
@@ -286,11 +336,11 @@ body {
   margin: 0em 0em 0em 1.5em;
 }
 
-.project-title {
+/* .project-title {
   color: white;
   font-weight: bold;
   font-size: 50px;
-}
+} */
 
 .featured-project {
   position: relative;
@@ -320,7 +370,7 @@ body {
 
 .project-icons-container {
   position: absolute;
-  bottom: 5px;
+  bottom: 30px;
   left: 5px;
 }
 

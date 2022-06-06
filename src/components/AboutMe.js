@@ -282,11 +282,11 @@ function AboutMe() {
   return (
     <div id="about-me" className="between-padding">
       <div className="row text-center about-me-row">
-        <h1 className="section-title text-start" id="about-me-title">
-          about
-        </h1>
+        {/* <h1 className="section-title">
+          about me
+        </h1> */}
 
-        <div className="col-md-4 border-right about-me-section-col">
+        <div className="col-lg-4 border-right about-me-section-col">
           <i class="bi bi-hourglass" style={{ fontSize: 75 }}></i>
           <h3 className="about-me-section-title">BACKGROUND</h3>
           <div className="about-me-section-text">
@@ -302,7 +302,7 @@ function AboutMe() {
           </div>
         </div>
 
-        <div className="col-md-4 border-right about-me-section-col">
+        <div className="col-lg-4 border-right about-me-section-col">
           <i class="bi bi-mortarboard" style={{ fontSize: 75 }}></i>
           <h3 className="about-me-section-title">EDUCATION</h3>
           <div className="about-me-section-text">
@@ -324,7 +324,7 @@ function AboutMe() {
           </div>
         </div>
 
-        <div className="col-md-4 about-me-section-col">
+        <div className="col-lg-4 about-me-section-col">
           <i class="bi bi-clock-history" style={{ fontSize: 75 }}></i>
           <h3 className="about-me-section-title">EXPERIENCE</h3>
           <div className="about-me-section-text">
@@ -345,7 +345,7 @@ function AboutMe() {
       </div>
       <SkillsCarousel
         skills={carouselSkillsArray}
-        style={{ marginTop: '5em' }}
+        style={{ marginTop: 'var(--vertical-margin)' }}
       />
     </div>
   );

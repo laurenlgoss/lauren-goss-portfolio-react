@@ -52,13 +52,9 @@ function Contact() {
 
   return (
     <div id="contact">
-      <div className="row" style={{ height: '0', position: 'relative' }}>
-        <div className="col text-end">
-          <h1 className="section-title" id="contact-title">
-            contact
-          </h1>
-        </div>
-      </div>
+    <h1 className="section-title">
+      contact me
+    </h1>
       <div className="row">
         <div className="col text-center">
           <h5 className="alt-font">
