@@ -10,14 +10,15 @@ import pokevImg from '../images/projects/pokev-tracker.png';
 import skyGazerImg from '../images/projects/sky-gazer.png';
 import employeeTrackerImg from '../images/projects/employee-tracker.gif';
 import weatherDashboardImg from '../images/projects/weather-dashboard.png';
-// import codeQuizImg from '../images/projects/code-quiz.png';
+import cabotWrennImg from '../images/projects/cabot-wrenn.png';
+import codeQuizImg from '../images/projects/code-quiz.png';
 
 const projectsArray = [];
 
 projectsArray.push(
   new Project(
     'https://artin-around.herokuapp.com/',
-    'Collaborative project utilizing the MERN stack. allows the user to explore street art by location and add their own images to their public portfolio.',
+    'Collaborative project utilizing the MERN stack. Allows the user to explore street art by location and add their own images to their public portfolio.',
     'https://github.com/laurenlgoss/Public-Art-Finder',
     artinAroundImg,
     [
@@ -37,7 +38,6 @@ projectsArray.push(
       'Mongoose',
       'ReactJS',
     ],
-    false,
     '',
     4,
     "Artin' Around"
@@ -63,7 +63,6 @@ projectsArray.push(
       'Node.js',
       'Sequelize',
     ],
-    false,
     'myRole',
     4,
     'AppliTrak'
@@ -93,7 +92,6 @@ projectsArray.push(
       'Mongoose',
       'ReactJS',
     ],
-    false,
     '',
     1,
     'PokÉV Tracker'
@@ -107,7 +105,6 @@ projectsArray.push(
     'https://github.com/laurenlgoss/Sky-Gazer',
     skyGazerImg,
     ['API', 'Bulma', 'CSS', 'Frontend', 'HTML', 'JavaScript', 'Local Storage'],
-    false,
     'myRole',
     4,
     'Sky Gazer'
@@ -121,7 +118,6 @@ projectsArray.push(
     'https://github.com/laurenlgoss/employee-tracker',
     employeeTrackerImg,
     ['Backend', 'Inquirer.js', 'JavaScript', 'MySQL', 'Node.js'],
-    true,
     '',
     1,
     'Employee Tracker'
@@ -143,26 +139,48 @@ projectsArray.push(
       'JavaScript',
       'Local Storage',
     ],
-    false,
     '',
     1,
     'Weather Dashboard'
   )
 );
 
-// projectsArray.push(
-//   new Project(
-//     'https://laurenlgoss.github.io/code-quiz/',
-//     '// multiple choice quiz that tests the user on knowledge of HTML, CSS, and JavaScript concepts.',
-//     'https://github.com/laurenlgoss/code-quiz',
-//     codeQuizImg,
-//     ['CSS', 'HTML', 'JavaScript', 'Local Storage'],
-//     false,
-//     '',
-//     1,
-//     'Code Quiz'
-//   )
-// );
+projectsArray.push(
+  new Project(
+    'https://cabotwrenn.com/',
+    'Cabot Wrenn consumer-facing website. I was responsible for redesigning the homepage and created the Build Your Table section from scratch (from database design, to back-end, to front-end).',
+    '',
+    cabotWrennImg,
+    [
+      'ASP.NET',
+      'Bootstrap',
+      'CSS',
+      'Fullstack',
+      'HTML',
+      'JavaScript',
+      'jQuery',
+      'MVC',
+      'SQL',
+      'Visual Basic',
+    ],
+    '',
+    1,
+    'Cabot Wrenn'
+  )
+);
+
+projectsArray.push(
+  new Project(
+    'https://laurenlgoss.github.io/code-quiz/',
+    'Multiple choice quiz that tests the user on knowledge of HTML, CSS, and JavaScript concepts.',
+    'https://github.com/laurenlgoss/code-quiz',
+    codeQuizImg,
+    ['CSS', 'Frontend', 'HTML', 'JavaScript', 'Local Storage'],
+    '',
+    1,
+    'Code Quiz'
+  )
+);
 
 function ProjectsContainer() {
   return (

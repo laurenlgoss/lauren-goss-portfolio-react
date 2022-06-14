@@ -67,6 +67,18 @@ export default function getBadgeColor(language) {
     case 'Backend':
       badgeColor = 'backend';
       break;
+    case 'SQL':
+      badgeColor = 'sql';
+      break;
+    case 'ASP.NET':
+      badgeColor = 'asp-net';
+      break;
+    case 'jQuery':
+      badgeColor = 'jquery';
+      break;
+    case 'Visual Basic':
+      badgeColor = 'visual-basic';
+      break;
     default:
       badgeColor = 'default-pill';
   }

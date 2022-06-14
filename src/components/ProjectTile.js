@@ -42,26 +42,16 @@ function ProjectTile({
 
             {/* Links */}
             <div className="project-icons-container">
-              <a
-                href={githubRepo}
-                target="_blank"
-                className={`${lightIcons ? 'light' : ''}`}
-                rel="noreferrer"
-              >
-                <FontAwesomeIcon icon={['fab', 'github']} size="3x" />
-              </a>
+              {githubRepo ? (
+                <a href={githubRepo} target="_blank" rel="noreferrer">
+                  <FontAwesomeIcon icon={['fab', 'github']} size="3x" />
+                </a>
+              ) : null}
               {deployedApp ? (
-                <a
-                  href={deployedApp}
-                  target="_blank"
-                  className={`${lightIcons ? 'light' : ''}`}
-                  rel="noreferrer"
-                >
+                <a href={deployedApp} target="_blank" rel="noreferrer">
                   <FontAwesomeIcon icon={['fas', 'desktop']} size="3x" />
                 </a>
-              ) : (
-                <></>
-              )}
+              ) : null}
             </div>
           </div>
 
